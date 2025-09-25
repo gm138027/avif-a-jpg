@@ -1,6 +1,7 @@
 import { useTranslation } from 'next-i18next';
 import { useRouter } from 'next/router';
 import { useState, useEffect } from 'react';
+import { analytics } from '@/utils/analytics';
 
 // 页面头部组件 - 简洁的导航结构
 export default function Header() {
@@ -90,6 +91,9 @@ export default function Header() {
 
   // 处理语言切换 - 避免查询参数传递
   const handleLanguageSwitch = (locale) => {
+    // 追踪语言切换
+    analytics.trackLanguageSwitch(currentLocale, locale);
+
     setIsLangDropdownOpen(false);
 
     // 只使用pathname，避免传递查询参数

@@ -3,6 +3,7 @@
 
 import JSZip from 'jszip';
 import ErrorHandler from './ErrorHandler.js';
+import { analytics } from '../utils/analytics.js';
 
 class DownloadService {
   /**
@@ -32,7 +33,10 @@ class DownloadService {
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
-      
+
+      // 追踪单个文件下载
+      analytics.trackDownload('single', 1);
+
       // 延迟清理URL，确保下载完成
       setTimeout(() => {
         URL.revokeObjectURL(url);
@@ -111,6 +115,9 @@ class DownloadService {
 
       // 下载ZIP文件
       this.downloadFile(zipBlob, zipFilename);
+
+      // 追踪ZIP下载
+      analytics.trackDownload('zip', successfulResults.length);
 
       return {
         attempted: successfulResults.length,

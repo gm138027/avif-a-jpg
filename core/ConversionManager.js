@@ -4,6 +4,7 @@
 import ImageConverter from './ImageConverter.js';
 import DownloadService from './DownloadService.js';
 import ErrorHandler from './ErrorHandler.js';
+import { analytics } from '../utils/analytics.js';
 
 class ConversionManager {
   constructor() {
@@ -48,6 +49,9 @@ class ConversionManager {
     this.tasks.set(imageId, task);
     this._notifyListeners('taskStarted', task);
 
+    // 追踪转换开始
+    analytics.trackConversionStart(1, targetFormat);
+
     try {
       // 执行转换
       const convertedBlob = await ImageConverter.convertToFormat(file, targetFormat, quality);
@@ -67,6 +71,9 @@ class ConversionManager {
       this.tasks.set(imageId, task);
       this._notifyListeners('taskCompleted', task);
 
+      // 追踪转换成功
+      analytics.trackConversionComplete(1, targetFormat, true);
+
       return task.result;
     } catch (error) {
       // 更新任务状态为失败
@@ -76,6 +83,9 @@ class ConversionManager {
 
       this.tasks.set(imageId, task);
       this._notifyListeners('taskFailed', task);
+
+      // 追踪转换失败
+      analytics.trackConversionComplete(1, targetFormat, false);
 
       throw error;
     }

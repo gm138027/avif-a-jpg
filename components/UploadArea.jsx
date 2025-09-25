@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import { useTranslation } from 'next-i18next';
 import Button from './ButtonComponent';
 import FeatureSwitch from './FeatureSwitch';
+import { analytics } from '@/utils/analytics';
 
 // 上传区域组件 - 遵循单一职责原则
 // 职责：处理文件上传和格式选择
@@ -23,6 +24,10 @@ const UploadArea = React.memo(function UploadArea({
   const handleFileChange = (e) => {
     const files = e.target.files;
     if (files && files.length) {
+      // 追踪文件上传
+      const totalSize = Array.from(files).reduce((sum, file) => sum + file.size, 0);
+      analytics.trackFileUpload(files.length, totalSize);
+
       onFileAdd(files);
       e.target.value = '';
     }
@@ -38,6 +43,10 @@ const UploadArea = React.memo(function UploadArea({
     e.preventDefault();
     const files = e.dataTransfer.files;
     if (files && files.length) {
+      // 追踪拖拽上传
+      const totalSize = Array.from(files).reduce((sum, file) => sum + file.size, 0);
+      analytics.trackFileUpload(files.length, totalSize);
+
       onFileAdd(files);
     }
   };

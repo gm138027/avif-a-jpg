@@ -26,9 +26,23 @@ export default function Document({ __NEXT_DATA__ }) {
         {/* DNS预解析和预连接 */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
 
         {/* 预加载关键资源 */}
         <link rel="preload" href="/logo/android-chrome-192x192.png" as="image" />
+
+        {/* Google Analytics */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-4GDFBNVZWK"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-4GDFBNVZWK');
+            `,
+          }}
+        />
 
         {/* 基本SEO优化 */}
         <meta name="generator" content="Next.js" />
