@@ -1,0 +1,91 @@
+{
+  "title": "Contacto",
+  "subtitle": "¿Necesitas ayuda? Estamos aquí para ti",
+  "description": "Si tienes preguntas, sugerencias o necesitas asistencia técnica con nuestro convertidor de imágenes AVIF, no dudes en contactarnos. Responderemos lo antes posible.",
+  "email": {
+    "title": "Correo Electrónico",
+    "address": "guom0900@gmail.com",
+    "description": "Envíanos un correo electrónico y te responderemos en un plazo de 24-48 horas.",
+    "subjects": {
+      "title": "Asuntos sugeridos:",
+      "list": [
+        "Problema técnico con la conversión",
+        "Sugerencia de mejora",
+        "Pregunta sobre el servicio",
+        "Reporte de error",
+        "Consulta general"
+      ]
+    }
+  },
+  "form": {
+    "title": "Formulario de Contacto",
+    "name": {
+      "label": "Nombre",
+      "placeholder": "Tu nombre completo"
+    },
+    "email": {
+      "label": "Correo Electrónico",
+      "placeholder": "tu@email.com"
+    },
+    "subject": {
+      "label": "Asunto",
+      "placeholder": "Selecciona el tipo de consulta",
+      "options": [
+        "Problema técnico",
+        "Sugerencia de mejora",
+        "Pregunta sobre el servicio",
+        "Reporte de error",
+        "Consulta general",
+        "Otro"
+      ]
+    },
+    "message": {
+      "label": "Mensaje",
+      "placeholder": "Describe tu consulta o problema en detalle..."
+    },
+    "submit": "Enviar Mensaje",
+    "sending": "Enviando...",
+    "success": "¡Mensaje enviado correctamente! Te responderemos pronto.",
+    "error": "Error al enviar el mensaje. Por favor, intenta de nuevo o envía un correo directamente."
+  },
+  "response": {
+    "title": "Tiempo de Respuesta",
+    "description": "Nos comprometemos a responder todas las consultas en un plazo máximo de 48 horas. Para problemas técnicos urgentes, incluye detalles específicos sobre:",
+    "details": [
+      "Navegador y versión que utilizas",
+      "Sistema operativo",
+      "Descripción detallada del problema",
+      "Pasos para reproducir el error (si aplica)",
+      "Capturas de pantalla (si es necesario)"
+    ]
+  },
+  "faq": {
+    "title": "Preguntas Frecuentes",
+    "description": "Antes de contactarnos, revisa si tu pregunta ya está respondida en la sección de preguntas frecuentes de la página principal.",
+    "link": "Ver Preguntas Frecuentes"
+  },
+  "support": {
+    "title": "Soporte Técnico",
+    "description": "Para obtener la mejor asistencia técnica, por favor incluye la siguiente información en tu mensaje:",
+    "info": [
+      "Descripción clara del problema",
+      "Navegador web que utilizas",
+      "Tamaño y formato de las imágenes",
+      "Mensaje de error (si aparece alguno)",
+      "Pasos que realizaste antes del problema"
+    ]
+  },
+  "privacy": {
+    "title": "Privacidad de tu Consulta",
+    "description": "Respetamos tu privacidad. La información que compartas en tu consulta será utilizada únicamente para brindarte soporte y mejorar nuestro servicio. No compartimos datos personales con terceros."
+  },
+  "alternative": {
+    "title": "Métodos Alternativos",
+    "description": "Si prefieres no usar el formulario, puedes contactarnos directamente:",
+    "methods": [
+      "Envía un correo electrónico a guom0900@gmail.com",
+      "Incluye un asunto descriptivo en tu mensaje",
+      "Proporciona todos los detalles relevantes"
+    ]
+  }
+}

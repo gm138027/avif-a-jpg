@@ -1,0 +1,163 @@
+{
+  "site": {
+    "name": "avif a jpg",
+    "tagline": "Convierte imágenes avif a jpg de forma rápida y segura",
+    "title": "Convertir avif a jpg Online Gratis | Convertidor .avif a jpg y png Rápido",
+    "description": "Convertir avif a jpg gratis online. Convertidor que procesa archivos .avif a jpg localmente. Pasar de avif a jpg, cambiar .avif a jpg de forma segura. Conversor de avif a jpg sin límites."
+  },
+  "home": {
+    "title": "Convertidor avif a jpg",
+    "description": "Arrastra y suelta una imagen avif o haz clic para seleccionar un archivo.",
+    "upload": "Subir imagen",
+    "drop_here": "Suelta la imagen aquí",
+    "convert": "Convertir a jpg",
+    "download": "Descargar jpg",
+    "quality": "Calidad",
+    "processing": "Procesando…"
+  },
+  "conversion": {
+    "converting": "Convirtiendo...",
+    "start_conversion": "Iniciar conversión",
+    "conversion_progress": "Progreso de conversión: {{progress}}% ({{completed}}/{{total}})",
+    "conversion_completed": "Conversión completada: {{successful}} exitosos, {{failed}} fallidos"
+  },
+  "ui": {
+    "buttons": {
+      "select_file": "Seleccionar archivo",
+      "add_file": "Agregar archivo",
+      "upload_image": "Subir imagen",
+      "download_all": "Descargar todo",
+      "download": "Descarga ⬇",
+      "clear_list": "Borrar la cola",
+      "convert_more": "Convertir más",
+      "conversion": "Convertir",
+      "avif_to_jpg": "avif a jpg",
+      "avif_to_png": "avif a png"
+    },
+    "status": {
+      "prepare": "preparar",
+      "processing": "procesando",
+      "completed": "completado",
+      "creating_zip": "Creando archivo ZIP...",
+      "processing_general": "Procesando...",
+      "preparing": "Preparando..."
+    },
+    "labels": {
+      "delete_image": "Eliminar imagen",
+      "download_file": "Descargar archivo",
+      "clear_queue": "Borrar la cola",
+      "expand_list": "Expandir lista",
+      "collapse_list": "Contraer lista"
+    },
+    "headers": {
+      "conversion_result": "resultado de la conversión"
+    },
+    "messages": {
+      "no_files_to_download": "No hay archivos para descargar",
+      "download_files_zip": "Descargar {{count}} archivos como ZIP (listo)",
+      "preparing_conversion": "Preparando conversión...",
+      "click_to_upload": "Haga clic para subir una imagen, o arrastre y suelte su archivo aquí",
+      "only_avif": "(solo .avif)",
+      "files_completed": "Se completaron {{completed}} archivos (un total de {{total}})"
+    },
+    "errors": {
+      "browser_not_supported": "El navegador no soporta conversión de imágenes",
+      "invalid_file_input": "Archivo de entrada inválido",
+      "unsupported_format": "Formato de destino no soportado. Use \"jpeg\" o \"png\"",
+      "invalid_quality": "La calidad debe estar entre 0 y 1",
+      "conversion_failed_blob": "Conversión fallida: No se pudo crear el blob",
+      "conversion_failed_generic": "Conversión fallida: {{message}}",
+      "image_load_failed": "Error al cargar la imagen para conversión",
+      "invalid_parameters": "Parámetros inválidos: imageId y file son requeridos",
+      "invalid_avif_file": "El archivo no es una imagen AVIF válida",
+      "invalid_images_array": "Array de imágenes inválido",
+      "listener_not_function": "El listener debe ser una función",
+      "no_images_to_convert": "No hay imágenes para convertir",
+      "conversion_starting": "Iniciando conversión a {{format}}..."
+    },
+    "warnings": {
+      "blob_not_supported": "API Blob no soportada",
+      "url_not_supported": "URL.createObjectURL no soportado",
+      "download_not_supported": "Atributo download no soportado",
+      "insecure_context": "El contexto inseguro puede limitar la funcionalidad"
+    }
+  },
+  "nav": {
+    "how_to_use": "Cómo usar",
+    "faq": "Preguntas frecuentes",
+    "menu": "Menú"
+  },
+  "breadcrumb": {
+    "home": "Inicio",
+    "privacy": "Política de Privacidad",
+    "terms": "Términos de Servicio",
+    "contact": "Contacto"
+  },
+  "footer": {
+    "description": "Convertidor avif a jpg y png online gratuito en español. Transforma archivos avif a formatos compatibles de forma segura y privada. Procesamiento local, sin subir archivos a servidores. Convertir avif a jpg gratis, cambiar de .avif a jpg sin límites ni registro. Conversor de avif a jpg rápido y confiable.",
+    "privacy": "Privacidad",
+    "terms": "Términos",
+    "help": "Ayuda",
+    "rights": "Todos los derechos reservados.",
+    "copyright": "© {{year}} {{siteName}}. {{rights}}"
+  },
+  "seo": {
+    "h1": "Convertir avif a jpg Online Gratis - Conversor Rápido y Seguro",
+    "h2_convert_jpg": "Convertir avif a jpg Online",
+    "h2_convert_png": "Convertir avif a png",
+    "h2_why_convert": "¿Por qué Convertir de avif a jpg/png?",
+    "h2_how_to_convert": "¿Cómo Convertir avif a jpg/png?",
+    "h2_advantages": "¿Por qué Elegir Nuestro Convertidor avif a jpg?",
+    "h3_step_by_step": "Pasos Detallados para Convertir",
+    "h3_batch_conversion": "Conversión por Lotes",
+    "h3_browser_support": "Compatibilidad de Navegadores",
+    "h3_file_formats": "Formatos y Limitaciones Soportados",
+    "jpg_text": "Convertir avif a jpg online es la opción más popular para transformar tus imágenes al formato más compatible universalmente. Nuestro convertidor avif a jpg gratis te permite pasar de avif a jpg sin instalar programas adicionales. El formato jpg es perfecto para fotografías, imágenes con muchos colores y cuando necesitas archivos de menor tamaño. Al convertir de avif a jpg, obtienes máxima compatibilidad con todas las plataformas, redes sociales y dispositivos, incluso los más antiguos.",
+    "png_text": "Convertir avif a png es la mejor opción cuando necesitas preservar la transparencia de tus imágenes. El formato png es ideal para logos, gráficos, iconos y cualquier imagen que requiera fondo transparente. Nuestro conversor de avif a png mantiene intacta la información del canal alfa, garantizando que tus imágenes conserven todos los detalles de transparencia. Aunque los archivos png suelen ser más grandes que jpg, ofrecen calidad sin pérdida perfecta para gráficos profesionales.",
+    "why_convert_text": "Aunque avif es un formato moderno con excelente compresión, convertir de avif a jpg o png sigue siendo esencial por razones de compatibilidad. avif es relativamente nuevo y muchas aplicaciones, redes sociales, dispositivos antiguos y sistemas no lo soportan nativamente. Al convertir archivo avif a jpg, garantizas que tus imágenes se visualicen correctamente en cualquier plataforma, desde WhatsApp hasta sitios web antiguos. Además, convertir avif a png es necesario cuando trabajas con software de diseño que aún no ha adoptado el formato avif.",
+    "how_to_text": "Convertir avif a jpg o png es un proceso simple de 3 pasos:",
+    "advantage_1": "Sin límites de uso: convierte hasta 20 imágenes avif simultáneamente sin restricciones de cantidad o frecuencia",
+    "advantage_2": "Interfaz intuitiva y sencilla: diseño limpio que permite convertir archivos con solo arrastrar y soltar o hacer clic",
+    "advantage_3": "Funciona completamente offline: una vez cargada la página, procesa tus imágenes sin necesidad de conexión a internet",
+    "advantage_4": "Imágenes sin marcas de agua: tus archivos convertidos mantienen su aspecto original sin logos o sellos añadidos",
+    "advantage_5": "Acceso inmediato sin registro: comienza a convertir tus archivos avif al instante sin crear cuentas ni proporcionar datos personales",
+    "step_1": "Seleccionar archivos",
+    "step_1_desc": "Haz clic en 'Seleccionar archivos' o arrastra tus imágenes avif al área de conversión",
+    "step_2": "Elegir formato",
+    "step_2_desc": "Selecciona jpg para fotografías o png para imágenes con transparencia",
+    "step_3": "Convertir y descargar",
+    "step_3_desc": "Haz clic en 'Convertir' y descarga tus archivos transformados",
+    "features_title": "Principales Características del Convertidor avif a jpg",
+    "feature_batch_title": "Conversión por lotes",
+    "feature_batch_desc": "Procesa hasta 20 archivos avif simultáneamente",
+    "feature_online_title": "Completamente online",
+    "feature_online_desc": "Sin descargas ni instalaciones, funciona directamente en tu navegador",
+    "feature_free_title": "Completamente gratuito",
+    "feature_free_desc": "Herramienta de conversión avif a jpg/png sin costo alguno para todos los usuarios",
+    "feature_devices_title": "Multiplataforma",
+    "feature_devices_desc": "Compatible con PC, Mac, tablets y smartphones",
+    "feature_speed_title": "Velocidad excepcional",
+    "feature_speed_desc": "Transforma hasta 20 imágenes avif a jpg en cuestión de segundos",
+    "feature_quality_title": "Calidad profesional",
+    "feature_quality_desc": "jpg optimizado para fotografías, png sin pérdida para gráficos"
+  },
+  "faq": {
+    "title": "Preguntas Frecuentes sobre avif a jpg",
+    "q1": "¿Es gratis convertir avif a jpg online?",
+    "a1": "Sí, nuestro convertidor avif a jpg es completamente gratuito sin restricciones ocultas. Puedes convertir avif a jpg gratis tantas veces como necesites, sin límites de tamaño de archivo o cantidad de conversiones. No hay costos ocultos, suscripciones ni necesidad de registro para usar nuestro conversor de avif a jpg. Simplemente visita la página y comienza a pasar de avif a jpg inmediatamente.",
+    "q2": "¿Puedo convertir múltiples archivos .avif a jpg simultáneamente?",
+    "a2": "Absolutamente. Nuestro convertidor permite pasar múltiples archivos de .avif a jpg en una sola operación. Simplemente selecciona todas las imágenes avif que deseas convertir y el sistema procesará cada archivo avif a jpg manteniendo la organización y nombres originales. Puedes transformar hasta 20 archivos avif a jpg simultáneamente, y al finalizar, descargar todos como un archivo ZIP comprimido para mayor comodidad.",
+    "q3": "¿Puedo convertir avif a jpg desde mi teléfono móvil?",
+    "a3": "Sí, puedes convertir archivos avif a jpg perfectamente desde tu smartphone o tablet. Nuestro convertidor funciona en navegadores móviles como Chrome, Safari, Firefox y Edge en dispositivos Android e iOS. La interfaz se adapta automáticamente a pantallas táctiles, permitiendo seleccionar archivos desde tu galería o arrastrarlos fácilmente. El proceso de conversión es igual de rápido en dispositivos móviles.",
+    "q4": "¿Es seguro convertir archivos avif online?",
+    "a4": "Completamente seguro. Cuando usas nuestro convertidor para transformar avif a jpg, todos los archivos se procesan localmente en tu navegador sin enviarse a servidores externos. Esto significa que tus imágenes nunca salen de tu dispositivo durante el proceso de conversión. No almacenamos, copiamos ni accedemos a tus archivos de ninguna manera, garantizando privacidad total al pasar archivo avif a jpg.",
+    "q5": "¿Qué diferencia hay entre convertir avif a jpg vs png?",
+    "a5": "La elección entre convertir de avif a jpg o cambiar avif a png depende del tipo de imagen. Usa la conversión .avif a jpg para fotografías, imágenes con muchos colores y cuando necesites archivos más pequeños. Elige transformar avif a png para imágenes con transparencia, logos, gráficos con pocos colores, o cuando requieras la máxima calidad sin compresión. Ambas opciones están disponibles en nuestro conversor avif gratuito."
+  },
+  "common": {
+    "cancel": "Cancelar",
+    "close": "Cerrar",
+    "try_again": "Intentar de nuevo"
+  }
+}
+

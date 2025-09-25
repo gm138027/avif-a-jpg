@@ -1,0 +1,88 @@
+{
+  "title": "Privacy Policy",
+  "lastUpdated": "Last updated: {{date}}",
+  "introduction": {
+    "title": "Introduction",
+    "content": "This Privacy Policy describes how we collect, use, and protect your information when you use our avif to jpg/png image converter. We are committed to protecting your privacy and ensuring the security of your personal data."
+  },
+  "dataCollection": {
+    "title": "Information We Collect",
+    "subtitle1": "Local File Processing",
+    "content1": "Our image converter processes all files locally in your browser. The images you upload are never sent to our servers or stored online.",
+    "subtitle2": "Technical Usage Data",
+    "content2": "We may collect basic technical information such as:",
+    "list2": [
+      "Browser type and version",
+      "Operating system",
+      "IP address (anonymous)",
+      "Pages visited and time spent",
+      "Technical error information"
+    ]
+  },
+  "dataUsage": {
+    "title": "How We Use Your Information",
+    "content": "The technical information we collect is used solely to:",
+    "list": [
+      "Improve the performance and functionality of the converter",
+      "Identify and resolve technical issues",
+      "Analyze usage patterns to optimize user experience",
+      "Ensure the security and stability of the service"
+    ]
+  },
+  "dataProtection": {
+    "title": "Data Protection",
+    "subtitle1": "Local Processing",
+    "content1": "Your image files are processed entirely on your device. We do not have access to your images nor do we store them on our servers.",
+    "subtitle2": "Technical Security",
+    "content2": "We implement appropriate technical and organizational security measures to protect your information against unauthorized access, alteration, disclosure, or destruction.",
+    "subtitle3": "Data Retention",
+    "content3": "Anonymous technical data is retained only for the time necessary for the purposes described in this policy."
+  },
+  "cookies": {
+    "title": "Cookies and Similar Technologies",
+    "content": "We use cookies and similar technologies to:",
+    "list": [
+      "Remember your configuration preferences",
+      "Analyze website usage",
+      "Improve converter functionality"
+    ],
+    "management": "You can manage cookies through your browser settings. Please note that disabling certain cookies may affect site functionality."
+  },
+  "thirdParty": {
+    "title": "Third-Party Services",
+    "content": "We may use third-party services for web analytics and performance improvement. These services may collect information according to their own privacy policies.",
+    "note": "We do not share your image files with third parties, as all processing is done locally."
+  },
+  "userRights": {
+    "title": "Your Rights",
+    "content": "You have the right to:",
+    "list": [
+      "Know what personal information we have about you",
+      "Request correction of inaccurate information",
+      "Request deletion of your personal information",
+      "Object to the processing of your data",
+      "Request portability of your data"
+    ],
+    "contact": "To exercise these rights, you can contact us using the information provided at the end of this policy."
+  },
+  "minors": {
+    "title": "Minors",
+    "content": "Our service is not directed to children under 13. We do not knowingly collect personal information from children under 13. If we discover that we have collected information from a minor, we will take steps to delete such information."
+  },
+  "changes": {
+    "title": "Changes to This Policy",
+    "content": "We may update this Privacy Policy occasionally. We will notify you of significant changes by posting the new policy on this page and updating the 'Last updated' date."
+  },
+  "contact": {
+    "title": "Contact",
+    "content": "If you have questions about this Privacy Policy or our privacy practices, you can contact us through:",
+    "methods": [
+      "Contact form on our website",
+      "Contact information available on the main page"
+    ]
+  },
+  "compliance": {
+    "title": "Legal Compliance",
+    "content": "This policy complies with international data protection regulations, including principles of transparency, data minimization, and security by design."
+  }
+}

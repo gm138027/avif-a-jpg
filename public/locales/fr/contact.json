@@ -1,0 +1,91 @@
+{
+  "title": "Contact",
+  "subtitle": "Besoin d'aide ? Nous sommes là pour vous",
+  "description": "Si vous avez des questions, des suggestions ou avez besoin d'assistance technique avec notre convertisseur d'images avif, n'hésitez pas à nous contacter. Nous répondrons dans les plus brefs délais.",
+  "email": {
+    "title": "Courrier Électronique",
+    "address": "guom0900@gmail.com",
+    "description": "Envoyez-nous un e-mail et nous vous répondrons dans un délai de 24 à 48 heures.",
+    "subjects": {
+      "title": "Sujets suggérés :",
+      "list": [
+        "Problème technique avec la conversion",
+        "Suggestion d'amélioration",
+        "Question sur le service",
+        "Rapport d'erreur",
+        "Demande générale"
+      ]
+    }
+  },
+  "form": {
+    "title": "Formulaire de Contact",
+    "name": {
+      "label": "Nom",
+      "placeholder": "Votre nom complet"
+    },
+    "email": {
+      "label": "Courrier Électronique",
+      "placeholder": "votre@email.com"
+    },
+    "subject": {
+      "label": "Sujet",
+      "placeholder": "Sélectionnez le type de demande",
+      "options": [
+        "Problème technique",
+        "Suggestion d'amélioration",
+        "Question sur le service",
+        "Rapport d'erreur",
+        "Demande générale",
+        "Autre"
+      ]
+    },
+    "message": {
+      "label": "Message",
+      "placeholder": "Décrivez votre demande ou problème en détail..."
+    },
+    "submit": "Envoyer le Message",
+    "sending": "Envoi en cours...",
+    "success": "Message envoyé avec succès ! Nous vous répondrons bientôt.",
+    "error": "Erreur lors de l'envoi du message. Veuillez réessayer ou envoyer un e-mail directement."
+  },
+  "response": {
+    "title": "Temps de Réponse",
+    "description": "Nous nous engageons à répondre à toutes les demandes dans un délai maximum de 48 heures. Pour les problèmes techniques urgents, incluez des détails spécifiques sur :",
+    "details": [
+      "Navigateur et version que vous utilisez",
+      "Système d'exploitation",
+      "Description détaillée du problème",
+      "Étapes pour reproduire l'erreur (le cas échéant)",
+      "Captures d'écran (si nécessaire)"
+    ]
+  },
+  "faq": {
+    "title": "Questions Fréquemment Posées",
+    "description": "Avant de nous contacter, vérifiez si votre question a déjà une réponse dans la section des questions fréquemment posées de la page principale.",
+    "link": "Voir les Questions Fréquentes"
+  },
+  "support": {
+    "title": "Support Technique",
+    "description": "Pour obtenir la meilleure assistance technique, veuillez inclure les informations suivantes dans votre message :",
+    "info": [
+      "Description claire du problème",
+      "Navigateur web que vous utilisez",
+      "Taille et format des images",
+      "Message d'erreur (le cas échéant)",
+      "Étapes que vous avez effectuées avant le problème"
+    ]
+  },
+  "privacy": {
+    "title": "Confidentialité de Votre Demande",
+    "description": "Nous respectons votre vie privée. Les informations que vous partagez dans votre demande seront utilisées uniquement pour vous fournir un support et améliorer notre service. Nous ne partageons pas les données personnelles avec des tiers."
+  },
+  "alternative": {
+    "title": "Méthodes Alternatives",
+    "description": "Si vous préférez ne pas utiliser le formulaire, vous pouvez nous contacter directement :",
+    "methods": [
+      "Envoyez un e-mail à guom0900@gmail.com",
+      "Incluez un sujet descriptif dans votre message",
+      "Fournissez tous les détails pertinents"
+    ]
+  }
+}

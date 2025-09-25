@@ -1,0 +1,88 @@
+{
+  "title": "Politique de Confidentialité",
+  "lastUpdated": "Dernière mise à jour : {{date}}",
+  "introduction": {
+    "title": "Introduction",
+    "content": "Cette Politique de Confidentialité décrit comment nous collectons, utilisons et protégeons vos informations lorsque vous utilisez notre convertisseur d'images avif en jpg/png. Nous nous engageons à protéger votre vie privée et à garantir la sécurité de vos données personnelles."
+  },
+  "dataCollection": {
+    "title": "Informations que Nous Collectons",
+    "subtitle1": "Traitement Local des Fichiers",
+    "content1": "Notre convertisseur d'images traite tous les fichiers localement dans votre navigateur. Les images que vous téléversez ne sont jamais envoyées à nos serveurs ni stockées en ligne.",
+    "subtitle2": "Données d'Usage Technique",
+    "content2": "Nous pouvons collecter des informations techniques de base telles que :",
+    "list2": [
+      "Type de navigateur et version",
+      "Système d'exploitation",
+      "Adresse IP (de manière anonyme)",
+      "Pages visitées et temps de séjour",
+      "Informations sur les erreurs techniques"
+    ]
+  },
+  "dataUsage": {
+    "title": "Comment Nous Utilisons Vos Informations",
+    "content": "Les informations techniques que nous collectons sont utilisées uniquement pour :",
+    "list": [
+      "Améliorer les performances et la fonctionnalité du convertisseur",
+      "Identifier et résoudre les problèmes techniques",
+      "Analyser les modèles d'utilisation pour optimiser l'expérience utilisateur",
+      "Garantir la sécurité et la stabilité du service"
+    ]
+  },
+  "dataProtection": {
+    "title": "Protection des Données",
+    "subtitle1": "Traitement Local",
+    "content1": "Vos fichiers d'images sont traités entièrement sur votre appareil. Nous n'avons pas accès à vos images et ne les stockons pas sur nos serveurs.",
+    "subtitle2": "Sécurité Technique",
+    "content2": "Nous mettons en œuvre des mesures de sécurité techniques et organisationnelles appropriées pour protéger vos informations contre l'accès non autorisé, l'altération, la divulgation ou la destruction.",
+    "subtitle3": "Conservation des Données",
+    "content3": "Les données techniques anonymes ne sont conservées que pendant le temps nécessaire aux fins décrites dans cette politique."
+  },
+  "cookies": {
+    "title": "Cookies et Technologies Similaires",
+    "content": "Nous utilisons des cookies et des technologies similaires pour :",
+    "list": [
+      "Mémoriser vos préférences de configuration",
+      "Analyser l'utilisation du site web",
+      "Améliorer la fonctionnalité du convertisseur"
+    ],
+    "management": "Vous pouvez gérer les cookies via les paramètres de votre navigateur. Veuillez noter que la désactivation de certains cookies peut affecter la fonctionnalité du site."
+  },
+  "thirdParty": {
+    "title": "Services Tiers",
+    "content": "Nous pouvons utiliser des services tiers pour l'analyse web et l'amélioration des performances. Ces services peuvent collecter des informations selon leurs propres politiques de confidentialité.",
+    "note": "Nous ne partageons pas vos fichiers d'images avec des tiers, car tout le traitement est effectué localement."
+  },
+  "userRights": {
+    "title": "Vos Droits",
+    "content": "Vous avez le droit de :",
+    "list": [
+      "Savoir quelles informations personnelles nous avons sur vous",
+      "Demander la correction d'informations inexactes",
+      "Demander la suppression de vos informations personnelles",
+      "Vous opposer au traitement de vos données",
+      "Demander la portabilité de vos données"
+    ],
+    "contact": "Pour exercer ces droits, vous pouvez nous contacter en utilisant les informations fournies à la fin de cette politique."
+  },
+  "minors": {
+    "title": "Mineurs",
+    "content": "Notre service ne s'adresse pas aux enfants de moins de 13 ans. Nous ne collectons pas sciemment d'informations personnelles auprès d'enfants de moins de 13 ans. Si nous découvrons que nous avons collecté des informations d'un mineur, nous prendrons des mesures pour supprimer ces informations."
+  },
+  "changes": {
+    "title": "Modifications de cette Politique",
+    "content": "Nous pouvons mettre à jour cette Politique de Confidentialité occasionnellement. Nous vous informerons des changements significatifs en publiant la nouvelle politique sur cette page et en mettant à jour la date de 'Dernière mise à jour'."
+  },
+  "contact": {
+    "title": "Contact",
+    "content": "Si vous avez des questions sur cette Politique de Confidentialité ou sur nos pratiques de confidentialité, vous pouvez nous contacter via :",
+    "methods": [
+      "Formulaire de contact sur notre site web",
+      "Informations de contact disponibles sur la page principale"
+    ]
+  },
+  "compliance": {
+    "title": "Conformité Légale",
+    "content": "Cette politique est conforme aux réglementations internationales de protection des données, y compris les principes de transparence, de minimisation des données et de sécurité dès la conception."
+  }
+}

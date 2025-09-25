@@ -1,0 +1,124 @@
+{
+  "title": "Términos de Servicio",
+  "lastUpdated": "Última actualización: {{date}}",
+  "introduction": {
+    "title": "Introducción",
+    "content": "Estos Términos de Servicio rigen el uso de nuestro convertidor de imágenes AVIF a JPG/PNG. Al utilizar nuestro servicio, usted acepta cumplir con estos términos. Si no está de acuerdo con alguna parte de estos términos, no debe utilizar nuestro servicio."
+  },
+  "serviceDescription": {
+    "title": "Descripción del Servicio",
+    "content": "Proporcionamos una herramienta gratuita de conversión de imágenes que permite a los usuarios convertir archivos AVIF a formatos JPG y PNG. El servicio funciona completamente en el navegador del usuario, procesando las imágenes localmente sin cargar archivos a nuestros servidores.",
+    "features": [
+      "Conversión gratuita de imágenes AVIF a JPG/PNG",
+      "Procesamiento local en el navegador",
+      "Sin límites en el número de conversiones",
+      "Sin registro de usuario requerido",
+      "Interfaz web fácil de usar"
+    ]
+  },
+  "userResponsibilities": {
+    "title": "Responsabilidades del Usuario",
+    "content": "Al utilizar nuestro servicio, usted se compromete a:",
+    "list": [
+      "Utilizar el servicio únicamente para fines legales y legítimos",
+      "No cargar contenido que infrinja derechos de autor o propiedad intelectual",
+      "No utilizar el servicio para procesar contenido ilegal, ofensivo o dañino",
+      "No intentar interferir con el funcionamiento del servicio",
+      "Respetar los derechos de otros usuarios",
+      "No utilizar el servicio para actividades comerciales no autorizadas"
+    ]
+  },
+  "serviceAvailability": {
+    "title": "Disponibilidad del Servicio",
+    "content": "Nos esforzamos por mantener el servicio disponible las 24 horas del día, los 7 días de la semana. Sin embargo, no garantizamos que el servicio esté siempre disponible o libre de errores.",
+    "limitations": [
+      "El servicio puede no estar disponible debido a mantenimiento programado",
+      "Pueden ocurrir interrupciones temporales por razones técnicas",
+      "No garantizamos la compatibilidad con todos los navegadores o dispositivos",
+      "El rendimiento puede variar según las especificaciones del dispositivo del usuario"
+    ]
+  },
+  "intellectualProperty": {
+    "title": "Propiedad Intelectual",
+    "content": "El servicio, incluyendo su diseño, código, logotipos y contenido, está protegido por derechos de propiedad intelectual.",
+    "userContent": "Los usuarios conservan todos los derechos sobre las imágenes que procesan a través de nuestro servicio. No reclamamos ningún derecho sobre el contenido del usuario.",
+    "serviceRights": "Nos reservamos todos los derechos sobre el software, la interfaz y la funcionalidad del servicio."
+  },
+  "dataProcessing": {
+    "title": "Procesamiento de Datos",
+    "content": "Nuestro servicio procesa las imágenes localmente en su navegador. Esto significa que:",
+    "principles": [
+      "Sus imágenes nunca se cargan en nuestros servidores",
+      "Todo el procesamiento ocurre en su dispositivo",
+      "No tenemos acceso a sus archivos de imagen",
+      "No almacenamos ni conservamos copias de sus imágenes",
+      "El procesamiento es completamente privado y seguro"
+    ]
+  },
+  "disclaimers": {
+    "title": "Exenciones de Responsabilidad",
+    "content": "El servicio se proporciona 'tal como está' sin garantías de ningún tipo.",
+    "warranties": [
+      "No garantizamos que el servicio satisfaga sus necesidades específicas",
+      "No garantizamos que el servicio sea ininterrumpido o libre de errores",
+      "No garantizamos la precisión o confiabilidad de los resultados",
+      "No somos responsables de la pérdida de datos o archivos",
+      "El uso del servicio es bajo su propio riesgo"
+    ]
+  },
+  "limitations": {
+    "title": "Limitación de Responsabilidad",
+    "content": "En la máxima medida permitida por la ley aplicable, no seremos responsables de ningún daño directo, indirecto, incidental, especial o consecuente que resulte del uso o la imposibilidad de usar nuestro servicio.",
+    "exclusions": [
+      "Pérdida de datos o archivos",
+      "Pérdida de beneficios o ingresos",
+      "Interrupción del negocio",
+      "Daños a equipos o software",
+      "Cualquier otro daño o pérdida"
+    ]
+  },
+  "prohibited": {
+    "title": "Usos Prohibidos",
+    "content": "Está prohibido utilizar nuestro servicio para:",
+    "list": [
+      "Procesar contenido ilegal, difamatorio o que infrinja derechos de terceros",
+      "Intentar hackear, interferir o dañar el servicio",
+      "Utilizar el servicio para spam o actividades maliciosas",
+      "Violar cualquier ley o regulación aplicable",
+      "Crear cuentas falsas o múltiples (si aplicable)",
+      "Redistribuir o revender el servicio sin autorización"
+    ]
+  },
+  "termination": {
+    "title": "Terminación",
+    "content": "Nos reservamos el derecho de suspender o terminar el acceso al servicio en cualquier momento, sin previo aviso, por cualquier motivo, incluyendo pero no limitado a la violación de estos términos.",
+    "userRights": "Los usuarios pueden dejar de utilizar el servicio en cualquier momento sin necesidad de notificación previa."
+  },
+  "modifications": {
+    "title": "Modificaciones de los Términos",
+    "content": "Nos reservamos el derecho de modificar estos términos en cualquier momento. Los cambios significativos serán notificados a través de nuestro sitio web.",
+    "notification": "Es responsabilidad del usuario revisar periódicamente estos términos para estar al tanto de cualquier cambio.",
+    "acceptance": "El uso continuado del servicio después de la publicación de cambios constituye la aceptación de los nuevos términos."
+  },
+  "governingLaw": {
+    "title": "Ley Aplicable",
+    "content": "Estos términos se rigen por las leyes internacionales de comercio electrónico y las mejores prácticas de la industria tecnológica.",
+    "disputes": "Cualquier disputa relacionada con estos términos se resolverá de manera amistosa a través de mediación o arbitraje."
+  },
+  "contact": {
+    "title": "Contacto",
+    "content": "Si tiene preguntas sobre estos Términos de Servicio, puede contactarnos a través de:",
+    "methods": [
+      "Formulario de contacto disponible en nuestro sitio web",
+      "Información de contacto proporcionada en la página principal"
+    ]
+  },
+  "severability": {
+    "title": "Divisibilidad",
+    "content": "Si alguna disposición de estos términos se considera inválida o inaplicable, las disposiciones restantes continuarán en pleno vigor y efecto."
+  },
+  "entireAgreement": {
+    "title": "Acuerdo Completo",
+    "content": "Estos términos constituyen el acuerdo completo entre usted y nosotros con respecto al uso del servicio y reemplazan todos los acuerdos anteriores o contemporáneos."
+  }
+}

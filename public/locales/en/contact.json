@@ -1,0 +1,91 @@
+{
+  "title": "Contact",
+  "subtitle": "Need help? We're here for you",
+  "description": "If you have questions, suggestions, or need technical assistance with our avif image converter, don't hesitate to contact us. We'll respond as soon as possible.",
+  "email": {
+    "title": "Email",
+    "address": "guom0900@gmail.com",
+    "description": "Send us an email and we'll respond within 24-48 hours.",
+    "subjects": {
+      "title": "Suggested subjects:",
+      "list": [
+        "Technical problem with conversion",
+        "Improvement suggestion",
+        "Service question",
+        "Error report",
+        "General inquiry"
+      ]
+    }
+  },
+  "form": {
+    "title": "Contact Form",
+    "name": {
+      "label": "Name",
+      "placeholder": "Your full name"
+    },
+    "email": {
+      "label": "Email",
+      "placeholder": "your@email.com"
+    },
+    "subject": {
+      "label": "Subject",
+      "placeholder": "Select the type of inquiry",
+      "options": [
+        "Technical problem",
+        "Improvement suggestion",
+        "Service question",
+        "Error report",
+        "General inquiry",
+        "Other"
+      ]
+    },
+    "message": {
+      "label": "Message",
+      "placeholder": "Describe your inquiry or problem in detail..."
+    },
+    "submit": "Send Message",
+    "sending": "Sending...",
+    "success": "Message sent successfully! We'll respond soon.",
+    "error": "Error sending message. Please try again or send an email directly."
+  },
+  "response": {
+    "title": "Response Time",
+    "description": "We commit to responding to all inquiries within a maximum of 48 hours. For urgent technical problems, include specific details about:",
+    "details": [
+      "Browser and version you're using",
+      "Operating system",
+      "Detailed description of the problem",
+      "Steps to reproduce the error (if applicable)",
+      "Screenshots (if necessary)"
+    ]
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "description": "Before contacting us, check if your question is already answered in the frequently asked questions section on the main page.",
+    "link": "View FAQ"
+  },
+  "support": {
+    "title": "Technical Support",
+    "description": "To get the best technical assistance, please include the following information in your message:",
+    "info": [
+      "Clear description of the problem",
+      "Web browser you're using",
+      "Size and format of the images",
+      "Error message (if any)",
+      "Steps you took before the problem occurred"
+    ]
+  },
+  "privacy": {
+    "title": "Privacy of Your Inquiry",
+    "description": "We respect your privacy. The information you share in your inquiry will be used solely to provide you with support and improve our service. We do not share personal data with third parties."
+  },
+  "alternative": {
+    "title": "Alternative Methods",
+    "description": "If you prefer not to use the form, you can contact us directly:",
+    "methods": [
+      "Send an email to guom0900@gmail.com",
+      "Include a descriptive subject in your message",
+      "Provide all relevant details"
+    ]
+  }
+}

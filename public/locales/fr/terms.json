@@ -1,0 +1,124 @@
+{
+  "title": "Conditions d'Utilisation",
+  "lastUpdated": "Dernière mise à jour : {{date}}",
+  "introduction": {
+    "title": "Introduction",
+    "content": "Ces Conditions d'Utilisation régissent l'utilisation de notre convertisseur d'images avif en jpg/png. En utilisant notre service, vous acceptez de vous conformer à ces conditions. Si vous n'êtes pas d'accord avec une partie de ces conditions, vous ne devez pas utiliser notre service."
+  },
+  "serviceDescription": {
+    "title": "Description du Service",
+    "content": "Nous fournissons un outil gratuit de conversion d'images qui permet aux utilisateurs de convertir des fichiers avif aux formats jpg et png. Le service fonctionne entièrement dans le navigateur de l'utilisateur, traitant les images localement sans téléverser de fichiers sur nos serveurs.",
+    "features": [
+      "Conversion gratuite d'images avif en jpg/png",
+      "Traitement local dans le navigateur",
+      "Aucune limite sur le nombre de conversions",
+      "Aucune inscription d'utilisateur requise",
+      "Interface web facile à utiliser"
+    ]
+  },
+  "userResponsibilities": {
+    "title": "Responsabilités de l'Utilisateur",
+    "content": "En utilisant notre service, vous vous engagez à :",
+    "list": [
+      "Utiliser le service uniquement à des fins légales et légitimes",
+      "Ne pas télécharger de contenu qui enfreint les droits d'auteur ou la propriété intellectuelle",
+      "Ne pas utiliser le service pour traiter du contenu illégal, offensant ou nuisible",
+      "Ne pas tenter d'interférer avec le fonctionnement du service",
+      "Respecter les droits des autres utilisateurs",
+      "Ne pas utiliser le service pour des activités commerciales non autorisées"
+    ]
+  },
+  "serviceAvailability": {
+    "title": "Disponibilité du Service",
+    "content": "Nous nous efforçons de maintenir le service disponible 24 heures sur 24, 7 jours sur 7. Cependant, nous ne garantissons pas que le service soit toujours disponible ou exempt d'erreurs.",
+    "limitations": [
+      "Le service peut ne pas être disponible en raison d'une maintenance programmée",
+      "Des interruptions temporaires peuvent survenir pour des raisons techniques",
+      "Nous ne garantissons pas la compatibilité avec tous les navigateurs ou appareils",
+      "Les performances peuvent varier selon les spécifications de l'appareil de l'utilisateur"
+    ]
+  },
+  "intellectualProperty": {
+    "title": "Propriété Intellectuelle",
+    "content": "Le service, y compris sa conception, son code, ses logos et son contenu, est protégé par des droits de propriété intellectuelle.",
+    "userContent": "Les utilisateurs conservent tous les droits sur les images qu'ils traitent via notre service. Nous ne revendiquons aucun droit sur le contenu de l'utilisateur.",
+    "serviceRights": "Nous nous réservons tous les droits sur le logiciel, l'interface et la fonctionnalité du service."
+  },
+  "dataProcessing": {
+    "title": "Traitement des Données",
+    "content": "Notre service traite les images localement dans votre navigateur. Cela signifie que :",
+    "principles": [
+      "Vos images ne sont jamais téléversées sur nos serveurs",
+      "Tout le traitement se produit sur votre appareil",
+      "Nous n'avons pas accès à vos fichiers d'images",
+      "Nous ne stockons ni ne conservons de copies de vos images",
+      "Le traitement est complètement privé et sécurisé"
+    ]
+  },
+  "disclaimers": {
+    "title": "Exclusions de Responsabilité",
+    "content": "Le service est fourni 'tel quel' sans garanties d'aucune sorte.",
+    "warranties": [
+      "Nous ne garantissons pas que le service répondra à vos besoins spécifiques",
+      "Nous ne garantissons pas que le service sera ininterrompu ou exempt d'erreurs",
+      "Nous ne garantissons pas la précision ou la fiabilité des résultats",
+      "Nous ne sommes pas responsables de la perte de données ou de fichiers",
+      "L'utilisation du service est à vos propres risques"
+    ]
+  },
+  "limitations": {
+    "title": "Limitation de Responsabilité",
+    "content": "Dans la mesure maximale autorisée par la loi applicable, nous ne serons pas responsables de tout dommage direct, indirect, accessoire, spécial ou consécutif résultant de l'utilisation ou de l'impossibilité d'utiliser notre service.",
+    "exclusions": [
+      "Perte de données ou de fichiers",
+      "Perte de profits ou de revenus",
+      "Interruption d'activité",
+      "Dommages aux équipements ou logiciels",
+      "Tout autre dommage ou perte"
+    ]
+  },
+  "prohibited": {
+    "title": "Utilisations Interdites",
+    "content": "Il est interdit d'utiliser notre service pour :",
+    "list": [
+      "Traiter du contenu illégal, diffamatoire ou qui enfreint les droits de tiers",
+      "Tenter de pirater, d'interférer ou d'endommager le service",
+      "Utiliser le service pour du spam ou des activités malveillantes",
+      "Violer toute loi ou réglementation applicable",
+      "Créer de faux comptes ou des comptes multiples (le cas échéant)",
+      "Redistribuer ou revendre le service sans autorisation"
+    ]
+  },
+  "termination": {
+    "title": "Résiliation",
+    "content": "Nous nous réservons le droit de suspendre ou de résilier l'accès au service à tout moment, sans préavis, pour quelque raison que ce soit, y compris mais sans s'y limiter à la violation de ces conditions.",
+    "userRights": "Les utilisateurs peuvent cesser d'utiliser le service à tout moment sans notification préalable."
+  },
+  "modifications": {
+    "title": "Modifications des Conditions",
+    "content": "Nous nous réservons le droit de modifier ces conditions à tout moment. Les changements significatifs seront notifiés via notre site web.",
+    "notification": "Il est de la responsabilité de l'utilisateur de réviser périodiquement ces conditions pour être informé de tout changement.",
+    "acceptance": "L'utilisation continue du service après la publication des changements constitue l'acceptation des nouvelles conditions."
+  },
+  "governingLaw": {
+    "title": "Loi Applicable",
+    "content": "Ces conditions sont régies par les lois applicables, les réglementations et les meilleures pratiques de l'industrie technologique.",
+    "disputes": "Tout litige lié à ces conditions sera résolu de manière amicale par médiation ou arbitrage."
+  },
+  "contact": {
+    "title": "Contact",
+    "content": "Si vous avez des questions sur ces Conditions d'Utilisation, vous pouvez nous contacter via :",
+    "methods": [
+      "Formulaire de contact disponible sur notre site web",
+      "Informations de contact fournies sur la page principale"
+    ]
+  },
+  "severability": {
+    "title": "Divisibilité",
+    "content": "Si une disposition de ces conditions est jugée invalide ou inapplicable, les dispositions restantes continueront à être pleinement en vigueur et applicables."
+  },
+  "entireAgreement": {
+    "title": "Accord Complet",
+    "content": "Ces conditions constituent l'accord complet entre vous et nous concernant l'utilisation du service et remplacent tous les accords antérieurs ou contemporains."
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "title": "Política de Privacidad",
+  "lastUpdated": "Última actualización: {{date}}",
+  "introduction": {
+    "title": "Introducción",
+    "content": "Esta Política de Privacidad describe cómo recopilamos, utilizamos y protegemos su información cuando utiliza nuestro convertidor de imágenes AVIF a JPG/PNG. Nos comprometemos a proteger su privacidad y garantizar la seguridad de sus datos personales."
+  },
+  "dataCollection": {
+    "title": "Información que Recopilamos",
+    "subtitle1": "Procesamiento Local de Archivos",
+    "content1": "Nuestro convertidor de imágenes procesa todos los archivos localmente en su navegador. Las imágenes que carga nunca se envían a nuestros servidores ni se almacenan en línea.",
+    "subtitle2": "Datos de Uso Técnico",
+    "content2": "Podemos recopilar información técnica básica como:",
+    "list2": [
+      "Tipo de navegador y versión",
+      "Sistema operativo",
+      "Dirección IP (de forma anónima)",
+      "Páginas visitadas y tiempo de permanencia",
+      "Información sobre errores técnicos"
+    ]
+  },
+  "dataUsage": {
+    "title": "Cómo Utilizamos su Información",
+    "content": "La información técnica que recopilamos se utiliza únicamente para:",
+    "list": [
+      "Mejorar el rendimiento y la funcionalidad del convertidor",
+      "Identificar y solucionar problemas técnicos",
+      "Analizar patrones de uso para optimizar la experiencia del usuario",
+      "Garantizar la seguridad y estabilidad del servicio"
+    ]
+  },
+  "dataProtection": {
+    "title": "Protección de Datos",
+    "subtitle1": "Procesamiento Local",
+    "content1": "Sus archivos de imagen se procesan completamente en su dispositivo. No tenemos acceso a sus imágenes ni las almacenamos en nuestros servidores.",
+    "subtitle2": "Seguridad Técnica",
+    "content2": "Implementamos medidas de seguridad técnicas y organizativas apropiadas para proteger su información contra acceso no autorizado, alteración, divulgación o destrucción.",
+    "subtitle3": "Retención de Datos",
+    "content3": "Los datos técnicos anónimos se conservan solo durante el tiempo necesario para los fines descritos en esta política."
+  },
+  "cookies": {
+    "title": "Cookies y Tecnologías Similares",
+    "content": "Utilizamos cookies y tecnologías similares para:",
+    "list": [
+      "Recordar sus preferencias de configuración",
+      "Analizar el uso del sitio web",
+      "Mejorar la funcionalidad del convertidor"
+    ],
+    "management": "Puede gestionar las cookies a través de la configuración de su navegador. Tenga en cuenta que deshabilitar ciertas cookies puede afectar la funcionalidad del sitio."
+  },
+  "thirdParty": {
+    "title": "Servicios de Terceros",
+    "content": "Podemos utilizar servicios de terceros para análisis web y mejora del rendimiento. Estos servicios pueden recopilar información de acuerdo con sus propias políticas de privacidad.",
+    "note": "No compartimos sus archivos de imagen con terceros, ya que todo el procesamiento se realiza localmente."
+  },
+  "userRights": {
+    "title": "Sus Derechos",
+    "content": "Usted tiene derecho a:",
+    "list": [
+      "Conocer qué información personal tenemos sobre usted",
+      "Solicitar la corrección de información inexacta",
+      "Solicitar la eliminación de su información personal",
+      "Oponerse al procesamiento de sus datos",
+      "Solicitar la portabilidad de sus datos"
+    ],
+    "contact": "Para ejercer estos derechos, puede contactarnos utilizando la información proporcionada al final de esta política."
+  },
+  "minors": {
+    "title": "Menores de Edad",
+    "content": "Nuestro servicio no está dirigido a menores de 13 años. No recopilamos conscientemente información personal de menores de 13 años. Si descubrimos que hemos recopilado información de un menor, tomaremos medidas para eliminar dicha información."
+  },
+  "changes": {
+    "title": "Cambios en esta Política",
+    "content": "Podemos actualizar esta Política de Privacidad ocasionalmente. Le notificaremos sobre cambios significativos publicando la nueva política en esta página y actualizando la fecha de 'Última actualización'."
+  },
+  "contact": {
+    "title": "Contacto",
+    "content": "Si tiene preguntas sobre esta Política de Privacidad o sobre nuestras prácticas de privacidad, puede contactarnos a través de:",
+    "methods": [
+      "Formulario de contacto en nuestro sitio web",
+      "Información de contacto disponible en la página principal"
+    ]
+  },
+  "compliance": {
+    "title": "Cumplimiento Legal",
+    "content": "Esta política cumple con las regulaciones internacionales de protección de datos, incluyendo principios de transparencia, minimización de datos y seguridad por diseño."
+  }
+}
