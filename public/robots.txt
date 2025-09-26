@@ -17,4 +17,4 @@ Disallow: /api/
 
 Disallow: /admin
 Disallow: /wp-admin
-Disallow: /wp-login.php 
+Disallow: /wp-login.php
