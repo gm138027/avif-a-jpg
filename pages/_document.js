@@ -28,9 +28,6 @@ export default function Document({ __NEXT_DATA__ }) {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link rel="preconnect" href="https://www.googletagmanager.com" />
 
-        {/* 预加载关键资源 */}
-        <link rel="preload" href="/logo/android-chrome-192x192.png" as="image" />
-
         {/* Google Analytics */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-4GDFBNVZWK"></script>
         <script

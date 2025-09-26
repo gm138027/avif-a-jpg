@@ -1,6 +1,7 @@
 import { useTranslation } from 'next-i18next';
 import { useRouter } from 'next/router';
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 import { analytics } from '@/utils/analytics';
 
 // 页面头部组件 - 简洁的导航结构
@@ -121,12 +122,14 @@ export default function Header() {
         {/* Logo区域 - 使用图片Logo */}
         <div className="header__logo">
           <a href="/" className="header__logo-link" onClick={handleLogoClick}>
-            <img
+            <Image
               src="/logo/android-chrome-192x192.png"
               alt={t('site.name')}
               className="header__logo-image"
-              width="32"
-              height="32"
+              width={32}
+              height={32}
+              priority={true}
+              sizes="32px"
             />
             <span className="header__logo-text">{t('site.name')}</span>
           </a>
