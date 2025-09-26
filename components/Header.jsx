@@ -124,7 +124,7 @@ export default function Header() {
           <a href="/" className="header__logo-link" onClick={handleLogoClick}>
             <Image
               src="/logo/android-chrome-192x192.png"
-              alt={t('site.name')}
+              alt={t('site.logo_alt')}
               className="header__logo-image"
               width={32}
               height={32}
