@@ -85,18 +85,18 @@ export default function Home() {
               "@context": "https://schema.org",
               "@graph": [
                 {
-                  "@type": "WebApplication",
-                  "name": t('site.name'),
-                  "description": t('site.description'),
-                  "url": currentUrl,
-                  "inLanguage": inLanguage,
-                  "applicationCategory": "MultimediaApplication",
-                  "operatingSystem": "Web Browser",
-                  "offers": {
-                    "@type": "Offer",
-                    "price": "0",
-                    "priceCurrency": "USD"
-                  }
+              "@type": "WebApplication",
+              "name": t('site.name'),
+              "description": t('site.description'),
+              "url": currentUrl,
+              "inLanguage": inLanguage,
+              "applicationCategory": "MultimediaApplication",
+              "operatingSystem": "Web Browser",
+              "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "USD"
+              }
                 },
                 {
                   "@type": "FAQPage",

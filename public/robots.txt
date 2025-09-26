@@ -1,26 +1,20 @@
 User-agent: *
 Allow: /
 
-# Sitemap
 Sitemap: https://avifajpg.com/sitemap.xml
 
-# Crawl-delay for respectful crawling
 Crawl-delay: 1
 
-# Allow all important pages
 Allow: /privacy
 Allow: /terms
 Allow: /contact
 
-# Allow static assets
 Allow: /logo/
 Allow: /icons/
 
-# Disallow unnecessary files
 Disallow: /_next/static/chunks/
 Disallow: /api/
 
-# Block common bot paths
 Disallow: /admin
 Disallow: /wp-admin
-Disallow: /wp-login.php
+Disallow: /wp-login.php 
