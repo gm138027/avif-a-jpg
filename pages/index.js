@@ -83,18 +83,67 @@ export default function Home() {
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "WebApplication",
-              "name": t('site.name'),
-              "description": t('site.description'),
-              "url": currentUrl,
-              "inLanguage": inLanguage,
-              "applicationCategory": "MultimediaApplication",
-              "operatingSystem": "Web Browser",
-              "offers": {
-                "@type": "Offer",
-                "price": "0",
-                "priceCurrency": "USD"
-              }
+              "@graph": [
+                {
+                  "@type": "WebApplication",
+                  "name": t('site.name'),
+                  "description": t('site.description'),
+                  "url": currentUrl,
+                  "inLanguage": inLanguage,
+                  "applicationCategory": "MultimediaApplication",
+                  "operatingSystem": "Web Browser",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "0",
+                    "priceCurrency": "USD"
+                  }
+                },
+                {
+                  "@type": "FAQPage",
+                  "mainEntity": [
+                    {
+                      "@type": "Question",
+                      "name": t('faq.q1'),
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": t('faq.a1')
+                      }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": t('faq.q2'),
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": t('faq.a2')
+                      }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": t('faq.q3'),
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": t('faq.a3')
+                      }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": t('faq.q4'),
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": t('faq.a4')
+                      }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": t('faq.q5'),
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": t('faq.a5')
+                      }
+                    }
+                  ]
+                }
+              ]
             })
           }}
         />
