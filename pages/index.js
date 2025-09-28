@@ -21,35 +21,32 @@ export default function Home() {
         return {
           url: 'https://avifajpg.com/en',
           inLanguage: 'en-US',
-          ogLocale: 'en_US',
-          keywords: 'convert avif to jpg, avif to jpg converter, avif to jpg online, .avif to jpg, convert avif to jpg free, avif to jpg online free'
+          ogLocale: 'en_US'
         };
       case 'fr':
         return {
           url: 'https://avifajpg.com/fr',
           inLanguage: 'fr-FR',
-          ogLocale: 'fr_FR',
-          keywords: 'convertir avif en jpg, convertisseur avif en jpg, avif en jpg, convertir avif en jpg gratuit, conversion avif en jpg, .avif en jpg'
+          ogLocale: 'fr_FR'
         };
       default: // 'es'
         return {
           url: 'https://avifajpg.com',
           inLanguage: 'es-ES',
-          ogLocale: 'es_ES',
-          keywords: 'convertir avif a jpg, convertidor avif a jpg, de avif a jpg, pasar de avif a jpg, .avif a jpg, convertir avif a jpg gratis, avif a jpg online'
+          ogLocale: 'es_ES'
         };
     }
   };
 
   const localeConfig = getLocaleConfig(currentLocale);
-  const { url: currentUrl, inLanguage, ogLocale, keywords } = localeConfig;
+  const { url: currentUrl, inLanguage, ogLocale } = localeConfig;
 
   return (
     <>
       <Head>
         <title>{t('site.title')}</title>
         <meta name="description" content={t('site.description')} />
-        <meta name="keywords" content={keywords} />
+        <meta name="keywords" content={t('site.keywords')} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/logo/favicon.ico" />
         <link rel="canonical" href={currentUrl} />
@@ -156,7 +153,7 @@ export default function Home() {
   );
 }
 
-// SEO友好：静态生成时预加载翻译
+// SEO友好：静态生成时预载翻译
 export async function getStaticProps({ locale }) {
   return {
     props: {
