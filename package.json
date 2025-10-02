@@ -4,9 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build --turbopack",
+    "build": "next build --turbopack && npm run generate",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "test": "vitest",
+    "generate": "next-sitemap"
   },
   "dependencies": {
     "jszip": "^3.10.1",
@@ -21,6 +23,9 @@
     "@types/react": "^19.1.13",
     "@types/react-dom": "^19.1.9",
     "eslint": "^9",
-    "eslint-config-next": "15.5.3"
+    "eslint-config-next": "15.5.3",
+    "jsdom": "^27.0.0",
+    "next-sitemap": "^4.2.3",
+    "vitest": "^3.2.4"
   }
 }

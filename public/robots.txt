@@ -1,20 +1,9 @@
+# *
 User-agent: *
 Allow: /
 
+# Host
+Host: https://avifajpg.com
+
+# Sitemaps
 Sitemap: https://avifajpg.com/sitemap.xml
-
-Crawl-delay: 1
-
-Allow: /privacy
-Allow: /terms
-Allow: /contact
-
-Allow: /logo/
-Allow: /icons/
-
-Disallow: /_next/static/chunks/
-Disallow: /api/
-
-Disallow: /admin
-Disallow: /wp-admin
-Disallow: /wp-login.php
