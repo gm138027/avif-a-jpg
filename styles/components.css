@@ -2341,3 +2341,11 @@
 }
 
 
+
+/* Arrow icon */
+.btn-icon--arrow {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+

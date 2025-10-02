@@ -29,7 +29,7 @@
       "add_file": "Agregar archivo",
       "upload_image": "Subir imagen",
       "download_all": "Descargar todo",
-      "download": "Descarga ⬇",
+      "download": "Descargar",
       "clear_list": "Borrar la cola",
       "convert_more": "Convertir más",
       "conversion": "Convertir",
@@ -37,7 +37,7 @@
       "avif_to_png": "avif a png"
     },
     "status": {
-      "prepare": "preparar",
+      "prepare": "Listo",
       "processing": "procesando",
       "completed": "completado",
       "creating_zip": "Creando archivo ZIP...",
@@ -162,4 +162,3 @@
     "try_again": "Intentar de nuevo"
   }
 }
-

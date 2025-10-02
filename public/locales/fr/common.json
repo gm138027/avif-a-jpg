@@ -29,7 +29,7 @@
       "add_file": "Ajouter un fichier",
       "upload_image": "Charger l'image",
       "download_all": "Tout télécharger",
-      "download": "Télécharger ⬇",
+      "download": "Télécharger",
       "clear_list": "Vider la file d'attente",
       "convert_more": "Convertir plus",
       "conversion": "Convertir",
@@ -38,7 +38,7 @@
     },
     "status": {
       "prepare": "Prêt",
-      "processing": "en cours",
+      "processing": "En cours de traitement",
       "completed": "terminé",
       "creating_zip": "Création du fichier zip...",
       "processing_general": "Traitement en cours...",

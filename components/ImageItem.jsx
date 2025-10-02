@@ -83,7 +83,10 @@ const ImageItem = React.memo(function ImageItem({
             className="download-btn"
             aria-label={t('ui.labels.download_file')}
           >
-            {t('ui.buttons.download')}
+            <>
+              {t('ui.buttons.download')}
+              <img src="/icons/arrow-down.svg" alt="" className="btn-icon btn-icon--arrow" />
+            </>
           </Button>
         )}
       </div>
