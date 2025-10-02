@@ -9,6 +9,7 @@ const ImageItem = React.memo(function ImageItem({
   imageName,
   imageSize,
   status = 'prepare', // 状态: 'prepare', 'processing', 'completed'
+  priority = false,
   onRemove,
   onDownload
 }) {
@@ -44,7 +45,7 @@ const ImageItem = React.memo(function ImageItem({
           src={imageUrl}
           alt={imageName}
           className="thumbnail"
-          loading="lazy"
+          loading={priority ? 'eager' : 'lazy'}
           decoding="async"
         />
       </div>

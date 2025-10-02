@@ -19,6 +19,7 @@ function NativeImageRenderer({
   const animationRef = React.useRef(null);
   // 文件输入引用
   const fileInputRef = React.useRef(null);
+  const preloadedRef = React.useRef(new Set());
 
   // 动态高度计算
   const stageStyle = React.useMemo(() => {
@@ -34,6 +35,77 @@ function NativeImageRenderer({
       return { '--stage-height': '395px', '--list-height': '360px', '--show-scroll': 'flex' };
     }
   }, [images.length]);
+
+  React.useEffect(() => {
+    const preloaded = preloadedRef.current;
+    const eagerCount = Math.min(images.length, 5);
+
+    for (let i = 0; i < eagerCount; i += 1) {
+      const image = images[i];
+      if (!image || preloaded.has(image.id) || !image.url) {
+        continue;
+      }
+
+      preloaded.add(image.id);
+
+      const eagerImg = new Image();
+      eagerImg.src = image.url;
+      if (typeof eagerImg.decode === 'function') {
+        eagerImg.decode().catch(() => {});
+      }
+    }
+
+    const remaining = images.slice(eagerCount);
+    if (remaining.length === 0) {
+      return;
+    }
+
+    const chunkSize = 4;
+    let index = 0;
+
+    const schedule = (fn) => {
+      if (typeof window !== 'undefined' && typeof window.requestIdleCallback === 'function') {
+        window.requestIdleCallback(fn);
+      } else {
+        setTimeout(fn, 100);
+      }
+    };
+
+    const loadChunk = () => {
+      const nextChunk = remaining.slice(index, index + chunkSize);
+      if (nextChunk.length === 0) {
+        return;
+      }
+
+      nextChunk.forEach((image) => {
+        if (!image || preloaded.has(image.id) || !image.url) {
+          return;
+        }
+
+        preloaded.add(image.id);
+
+        const img = new Image();
+        img.src = image.url;
+        if (typeof img.decode === 'function') {
+          img.decode().catch(() => {});
+        }
+      });
+
+      index += chunkSize;
+
+      if (index < remaining.length) {
+        schedule(loadChunk);
+      }
+    };
+
+    schedule(loadChunk);
+  }, [images]);
+
+  React.useEffect(() => {
+    return () => {
+      preloadedRef.current.clear();
+    };
+  }, []);
 
   // 文件选择处理
   const handleFileSelect = React.useCallback(() => {
@@ -170,7 +242,7 @@ function NativeImageRenderer({
         ref={containerRef}
         className="image-list image-list--scroll"
       >
-        {visibleImages.map((image) => {
+        {visibleImages.map((image, index) => {
           // 根据转换任务状态确定显示状态
           const task = conversionTasks.get(image.id);
           let displayStatus = 'prepare';
@@ -193,6 +265,7 @@ function NativeImageRenderer({
               imageName={image.name}
               imageSize={image.size}
               status={displayStatus}
+              priority={index < 5}
               onRemove={handleRemove}
               onDownload={onImageDownload}
             />
