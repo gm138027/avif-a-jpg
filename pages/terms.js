@@ -53,7 +53,7 @@ export default function Terms() {
   return (
     <>
       <Head>
-        <title>{t('terms:title')} | {t('common:site.name')}</title>
+        <title>{`${t('terms:title')} | ${t('common:site.name')}`}</title>
         <meta name="description" content={t('terms:introduction.content')} />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="AVIF a JPG" />

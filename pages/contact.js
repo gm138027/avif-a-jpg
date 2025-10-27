@@ -102,7 +102,7 @@ export default function Contact() {
   return (
     <>
       <Head>
-        <title>{t('contact:title')} | {t('common:site.name')}</title>
+        <title>{`${t('contact:title')} | ${t('common:site.name')}`}</title>
         <meta name="description" content={t('contact:description')} />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="AVIF a JPG" />

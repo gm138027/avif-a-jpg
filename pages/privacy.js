@@ -53,7 +53,7 @@ export default function Privacy() {
   return (
     <>
       <Head>
-        <title>{t('privacy:title')} | {t('common:site.name')}</title>
+        <title>{`${t('privacy:title')} | ${t('common:site.name')}`}</title>
         <meta name="description" content={t('privacy:introduction.content')} />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="AVIF a JPG" />
