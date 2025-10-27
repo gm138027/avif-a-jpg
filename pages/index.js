@@ -78,9 +78,23 @@ export default function Home() {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
+              __html: JSON.stringify({
                 "@context": "https://schema.org",
                 "@type": "FAQPage",
+                "@id": `${currentUrl}#faq`,
+                "url": currentUrl,
+                "name": t('site.title'),
+                "inLanguage": inLanguage,
+                "isPartOf": {
+                  "@id": "https://avifajpg.com#website"
+                },
+                "publisher": {
+                  "@id": "https://avifajpg.com#organization"
+                },
+                "mainEntityOfPage": {
+                  "@type": "WebPage",
+                  "@id": `${currentUrl}#webpage`
+                },
                 "mainEntity": [
                     {
                       "@type": "Question",

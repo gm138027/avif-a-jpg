@@ -84,16 +84,22 @@ export default function Terms() {
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "WebPage",
-              "name": t('terms:title'),
-              "description": t('terms:introduction.content'),
-              "url": canonicalUrl,
-              "inLanguage": inLanguage,
-              "isPartOf": {
-                "@type": "WebSite",
-                "name": t('common:site.name'),
-                "url": "https://avifajpg.com"
-              },
+                "@type": "TermsOfService",
+                "@id": `${canonicalUrl}#terms`,
+                "name": t('terms:title'),
+                "description": t('terms:introduction.content'),
+                "url": canonicalUrl,
+                "inLanguage": inLanguage,
+                "isPartOf": {
+                  "@id": "https://avifajpg.com#website"
+                },
+                "publisher": {
+                  "@id": "https://avifajpg.com#organization"
+                },
+                "mainEntityOfPage": {
+                  "@type": "WebPage",
+                  "@id": `${canonicalUrl}#webpage`
+                },
               "breadcrumb": {
                 "@type": "BreadcrumbList",
                 "itemListElement": [

@@ -133,31 +133,28 @@ export default function Contact() {
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "ContactPage",
-              "name": t('contact:title'),
-              "description": t('contact:description'),
-              "url": canonicalUrl,
-              "inLanguage": inLanguage,
-              "isPartOf": {
-                "@type": "WebSite",
-                "name": t('common:site.name'),
-                "url": "https://avifajpg.com"
-              },
-              "mainEntity": {
-                "@type": "Organization",
-                "name": t('common:site.name'),
-                "url": "https://avifajpg.com",
-                "email": "guom0900@gmail.com",
-                "contactPoint": {
-                  "@type": "ContactPoint",
-                  "email": "guom0900@gmail.com",
-                  "contactType": "customer service",
-                  "availableLanguage": ["Spanish", "English", "French"]
-                }
-              },
-              "breadcrumb": {
-                "@type": "BreadcrumbList",
-                "itemListElement": [
+                "@type": "ContactPage",
+                "@id": `${canonicalUrl}#contact`,
+                "name": t('contact:title'),
+                "description": t('contact:description'),
+                "url": canonicalUrl,
+                "inLanguage": inLanguage,
+                "isPartOf": {
+                  "@id": "https://avifajpg.com#website"
+                },
+                "mainEntityOfPage": {
+                  "@type": "WebPage",
+                  "@id": `${canonicalUrl}#webpage`
+                },
+                "about": {
+                  "@id": "https://avifajpg.com#organization"
+                },
+                "mainEntity": {
+                  "@id": "https://avifajpg.com#organization"
+                },
+                "breadcrumb": {
+                  "@type": "BreadcrumbList",
+                  "itemListElement": [
                   {
                     "@type": "ListItem",
                     "position": 1,

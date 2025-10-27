@@ -1,0 +1,7 @@
+# llms.txt – guidance for AI crawlers
+# Reference: emerging LLM crawler convention
+
+User-agent: *
+Allow: /
+
+# Contact: https://avifajpg.com/contact
