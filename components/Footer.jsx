@@ -1,24 +1,27 @@
+import Link from 'next/link';
 import React from 'react';
+import { useRouter } from 'next/router';
 import { useTranslation } from 'next-i18next';
 
 // 页面底部组件 - 简洁的信息结构
 export default function Footer() {
   const { t } = useTranslation('common');
+  const { locale } = useRouter();
 
   return (
     <footer className="footer">
       <div className="footer__container">
         {/* 快速链接 - 居中显示 */}
         <div className="footer__links">
-          <a href="/privacy" className="footer__link">
+          <Link href="/privacy" locale={locale} className="footer__link">
             {t('footer.privacy')}
-          </a>
-          <a href="/terms" className="footer__link">
+          </Link>
+          <Link href="/terms" locale={locale} className="footer__link">
             {t('footer.terms')}
-          </a>
-          <a href="/contact" className="footer__link">
+          </Link>
+          <Link href="/contact" locale={locale} className="footer__link">
             {t('footer.help')}
-          </a>
+          </Link>
         </div>
 
         {/* 版权信息 */}
@@ -35,3 +38,4 @@ export default function Footer() {
     </footer>
   );
 }
+

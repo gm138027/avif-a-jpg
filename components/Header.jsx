@@ -1,110 +1,98 @@
+import Link from 'next/link';
+import Image from 'next/image';
 import { useTranslation } from 'next-i18next';
 import { useRouter } from 'next/router';
-import { useState, useEffect } from 'react';
-import Image from 'next/image';
+import { useEffect, useState } from 'react';
 import { analytics } from '@/utils/analytics';
 
-// 页面头部组件 - 简洁的导航结构
+const HOME_SECTIONS = ['how-to-use', 'faq'];
+const HEADER_HEIGHT = 80;
+
 export default function Header() {
   const { t } = useTranslation('common');
   const router = useRouter();
+  const currentLocale = router.locale || 'es';
+
   const [activeSection, setActiveSection] = useState('');
   const [isLangDropdownOpen, setIsLangDropdownOpen] = useState(false);
   const [isMounted, setIsMounted] = useState(false);
 
-  // 获取当前语言
-  const currentLocale = router.locale || 'es';
   const currentLangDisplay = currentLocale.toUpperCase();
 
-  // 组件挂载后设置状态，避免hydration不匹配
   useEffect(() => {
     setIsMounted(true);
   }, []);
 
-  // 监听滚动，更新激活的导航项
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['how-to-use', 'faq'];
-      const scrollPosition = window.scrollY + 100; // 考虑导航栏高度
+      const scrollPosition = window.scrollY + HEADER_HEIGHT + 20;
 
-      for (const sectionId of sections) {
+      for (const sectionId of HOME_SECTIONS) {
         const element = document.getElementById(sectionId);
         if (element) {
           const { offsetTop, offsetHeight } = element;
           if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
             setActiveSection(sectionId);
-            break;
+            return;
           }
         }
       }
+
+      setActiveSection('');
     };
 
     window.addEventListener('scroll', handleScroll);
-    handleScroll(); // 初始检查
-
+    handleScroll();
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // 处理LOGO点击，智能导航
-  const handleLogoClick = (e) => {
-    e.preventDefault();
+  const handleLogoClick = (event) => {
+    if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.button !== 0) {
+      return;
+    }
 
-    // 检查当前是否在首页
-    if (window.location.pathname === '/') {
-      // 在首页，平滑滚动到顶部
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-      });
+    event.preventDefault();
+
+    if (router.pathname === '/') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     } else {
-      // 不在首页，返回首页
-      window.location.href = '/';
+      router.push('/', undefined, { locale: currentLocale });
     }
   };
 
-  // 处理导航链接点击，确保平滑滚动
-  const handleNavClick = (e, targetId) => {
-    e.preventDefault();
+  const handleNavClick = (event, targetId) => {
+    if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.button !== 0) {
+      return;
+    }
 
-    // 检查当前是否在首页
-    if (window.location.pathname === '/') {
-      // 在首页，直接滚动到目标元素
+    event.preventDefault();
+
+    if (router.pathname === '/') {
       const element = document.getElementById(targetId);
       if (element) {
-        const headerHeight = 80; // 固定导航栏高度
-        const elementPosition = element.offsetTop - headerHeight;
-
-        window.scrollTo({
-          top: elementPosition,
-          behavior: 'smooth'
-        });
+        const elementPosition = element.offsetTop - HEADER_HEIGHT;
+        window.scrollTo({ top: elementPosition, behavior: 'smooth' });
       }
     } else {
-      // 不在首页，跳转到首页的对应锚点
-      window.location.href = `/#${targetId}`;
+      router.push(
+        { pathname: '/', hash: targetId },
+        undefined,
+        { locale: currentLocale }
+      );
     }
   };
 
-  // 处理语言切换下拉菜单
   const toggleLangDropdown = () => {
-    setIsLangDropdownOpen(!isLangDropdownOpen);
+    setIsLangDropdownOpen((prev) => !prev);
   };
 
-  // 处理语言切换 - 避免查询参数传递
   const handleLanguageSwitch = (locale) => {
-    // 追踪语言切换
     analytics.trackLanguageSwitch(currentLocale, locale);
-
     setIsLangDropdownOpen(false);
 
-    // 只使用pathname，避免传递查询参数
-    const { pathname } = router;
-
-    // 使用Next.js的内置语言切换，确保URL清洁
-    router.push({ pathname }, pathname, { locale });
+    router.push(router.asPath, undefined, { locale });
   };
 
-  // 点击外部关闭下拉菜单
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (isLangDropdownOpen && !event.target.closest('.header__lang-switch')) {
@@ -119,40 +107,44 @@ export default function Header() {
   return (
     <header className="header">
       <div className="header__container">
-        {/* Logo区域 - 使用图片Logo */}
         <div className="header__logo">
-          <a href="/" className="header__logo-link" onClick={handleLogoClick}>
+          <Link
+            href="/"
+            locale={currentLocale}
+            className="header__logo-link"
+            onClick={handleLogoClick}
+          >
             <Image
               src="/logo/android-chrome-192x192.png"
               alt={t('site.logo_alt')}
               className="header__logo-image"
               width={32}
               height={32}
-              priority={true}
+              priority
               sizes="32px"
             />
             <span className="header__logo-text">{t('site.name')}</span>
-          </a>
+          </Link>
         </div>
 
-        {/* 导航区域 - 保持最简结构 */}
         <nav className="header__nav">
-          <a
-            href="/#how-to-use"
+          <Link
+            href={{ pathname: '/', hash: 'how-to-use' }}
+            locale={currentLocale}
             className={`header__nav-link ${activeSection === 'how-to-use' ? 'header__nav-link--active' : ''}`}
-            onClick={(e) => handleNavClick(e, 'how-to-use')}
+            onClick={(event) => handleNavClick(event, 'how-to-use')}
           >
             {t('nav.how_to_use')}
-          </a>
-          <a
-            href="/#faq"
+          </Link>
+          <Link
+            href={{ pathname: '/', hash: 'faq' }}
+            locale={currentLocale}
             className={`header__nav-link ${activeSection === 'faq' ? 'header__nav-link--active' : ''}`}
-            onClick={(e) => handleNavClick(e, 'faq')}
+            onClick={(event) => handleNavClick(event, 'faq')}
           >
             {t('nav.faq')}
-          </a>
+          </Link>
 
-          {/* 语言切换下拉菜单 */}
           <div className="header__lang-switch">
             <button
               className="header__lang-trigger"
@@ -206,9 +198,8 @@ export default function Header() {
           </div>
         </nav>
 
-        {/* 移动端菜单按钮 - 预留 */}
         <button className="header__menu-btn" aria-label={t('nav.menu')}>
-          <span className="header__menu-icon"></span>
+          <span className="header__menu-icon" />
         </button>
       </div>
     </header>
