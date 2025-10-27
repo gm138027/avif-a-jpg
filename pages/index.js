@@ -79,25 +79,9 @@ export default function Home() {
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@graph": [
-                {
-              "@type": "WebApplication",
-              "name": t('site.name'),
-              "description": t('site.description'),
-              "url": currentUrl,
-              "inLanguage": inLanguage,
-              "applicationCategory": "MultimediaApplication",
-              "operatingSystem": "Web Browser",
-              "offers": {
-                "@type": "Offer",
-                "price": "0",
-                "priceCurrency": "USD"
-              }
-                },
-                {
-                  "@type": "FAQPage",
-                  "mainEntity": [
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                "mainEntity": [
                     {
                       "@type": "Question",
                       "name": t('faq.q1'),
@@ -138,11 +122,9 @@ export default function Home() {
                         "text": t('faq.a5')
                       }
                     }
-                  ]
-                }
-              ]
-            })
-          }}
+                    ]
+              })
+            }}
         />
       </Head>
 
