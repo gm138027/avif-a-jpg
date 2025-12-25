@@ -21,7 +21,8 @@
     "pages/**/*",
     "components/**/*",
     "hooks/**/*",
-    "styles/**/*"
+    "styles/**/*",
+    "lib/**/*"
   ],
   "exclude": [
     "node_modules",

@@ -2,58 +2,54 @@ import Head from 'next/head';
 import { useMemo } from 'react';
 import { useRouter } from 'next/router';
 import { useTranslation } from 'next-i18next';
+import siteConfig from '@/lib/siteConfig';
 
-const BASE_URL = 'https://avifajpg.com';
-const DEFAULT_LOGO = `${BASE_URL}/logo/android-chrome-512x512.png`;
-
-const localeToLanguage = {
-  es: 'es-ES',
-  en: 'en-US',
-  fr: 'fr-FR'
-};
+const { siteUrl, buildLocalePath, getLocaleMeta, defaultLocale } = siteConfig;
+const DEFAULT_LOGO = `${siteUrl}/logo/android-chrome-512x512.png`;
 
 export default function SiteStructuredData() {
-  const { locale = 'es' } = useRouter();
+  const { locale = defaultLocale } = useRouter();
   const { t } = useTranslation('common');
 
   const structuredData = useMemo(() => {
-    const languageCode = localeToLanguage[locale] || 'es-ES';
+    const { inLanguage } = getLocaleMeta(locale);
     const siteName = t('site.name');
     const siteDescription = t('site.description');
+    const localeUrl = buildLocalePath(locale, '/');
 
     return {
       '@context': 'https://schema.org',
       '@graph': [
         {
           '@type': 'Organization',
-          '@id': `${BASE_URL}#organization`,
-          'name': siteName,
-          'url': BASE_URL,
-          'logo': {
+          '@id': `${siteUrl}#organization`,
+          name: siteName,
+          url: siteUrl,
+          logo: {
             '@type': 'ImageObject',
-            'url': DEFAULT_LOGO,
-            'width': 512,
-            'height': 512
+            url: DEFAULT_LOGO,
+            width: 512,
+            height: 512
           },
-          'contactPoint': [
+          contactPoint: [
             {
               '@type': 'ContactPoint',
-              'email': 'guom0900@gmail.com',
-              'contactType': 'customer service',
-              'availableLanguage': ['es', 'en', 'fr']
+              email: 'guom0900@gmail.com',
+              contactType: 'customer service',
+              availableLanguage: ['es', 'en', 'fr']
             }
           ],
-          'areaServed': 'Worldwide'
+          areaServed: 'Worldwide'
         },
         {
           '@type': 'WebSite',
-          '@id': `${BASE_URL}#website`,
-          'url': BASE_URL,
-          'name': siteName,
-          'description': siteDescription,
-          'inLanguage': languageCode,
-          'publisher': {
-            '@id': `${BASE_URL}#organization`
+          '@id': `${siteUrl}#website`,
+          url: localeUrl,
+          name: siteName,
+          description: siteDescription,
+          inLanguage,
+          publisher: {
+            '@id': `${siteUrl}#organization`
           }
         }
       ]
@@ -71,4 +67,3 @@ export default function SiteStructuredData() {
     </Head>
   );
 }
-

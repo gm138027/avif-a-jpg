@@ -5,42 +5,18 @@ import { useRouter } from 'next/router';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useState } from 'react';
 import Breadcrumb from '@/components/Breadcrumb';
+import siteConfig from '@/lib/siteConfig';
 
 // 联系我们页面
 export default function Contact() {
   const { t } = useTranslation(['contact', 'common']);
   const router = useRouter();
-  const currentLocale = router.locale || 'es';
-
-  // 动态生成多语言配置
-  const getLocaleConfig = (locale) => {
-    switch (locale) {
-      case 'en':
-        return {
-          url: 'https://avifajpg.com/en/contact',
-          inLanguage: 'en-US',
-          ogLocale: 'en_US',
-          breadcrumbHome: 'Home'
-        };
-      case 'fr':
-        return {
-          url: 'https://avifajpg.com/fr/contact',
-          inLanguage: 'fr-FR',
-          ogLocale: 'fr_FR',
-          breadcrumbHome: 'Accueil'
-        };
-      default: // 'es'
-        return {
-          url: 'https://avifajpg.com/contact',
-          inLanguage: 'es-ES',
-          ogLocale: 'es_ES',
-          breadcrumbHome: 'Inicio'
-        };
-    }
-  };
-
-  const localeConfig = getLocaleConfig(currentLocale);
-  const { url: canonicalUrl, inLanguage, ogLocale, breadcrumbHome } = localeConfig;
+  const { buildLocalePath, getLocaleMeta, siteUrl, defaultLocale } = siteConfig;
+  const currentLocale = router.locale || defaultLocale;
+  const canonicalUrl = buildLocalePath(currentLocale, '/contact');
+  const { inLanguage, ogLocale, homeLabel } = getLocaleMeta(currentLocale);
+  const homeUrl = buildLocalePath(currentLocale, '/');
+  const ogImage = `${siteUrl}/og-image.jpg`;
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -114,7 +90,7 @@ export default function Contact() {
         <meta property="og:type" content="website" />
         <meta property="og:url" content={canonicalUrl} />
         <meta property="og:site_name" content={t('common:site.name')} />
-        <meta property="og:image" content="https://avifajpg.com/og-image.jpg" />
+        <meta property="og:image" content={ogImage} />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content={`${t('contact:title')} - ${t('common:site.name')}`} />
@@ -124,7 +100,7 @@ export default function Contact() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={`${t('contact:title')} | ${t('common:site.name')}`} />
         <meta name="twitter:description" content={t('contact:description')} />
-        <meta name="twitter:image" content="https://avifajpg.com/og-image.jpg" />
+        <meta name="twitter:image" content={ogImage} />
         <meta name="twitter:image:alt" content={`${t('contact:title')} - ${t('common:site.name')}`} />
 
         {/* Structured Data */}
@@ -140,17 +116,17 @@ export default function Contact() {
                 "url": canonicalUrl,
                 "inLanguage": inLanguage,
                 "isPartOf": {
-                  "@id": "https://avifajpg.com#website"
+                  "@id": `${siteUrl}#website`
                 },
                 "mainEntityOfPage": {
                   "@type": "WebPage",
                   "@id": `${canonicalUrl}#webpage`
                 },
                 "about": {
-                  "@id": "https://avifajpg.com#organization"
+                  "@id": `${siteUrl}#organization`
                 },
                 "mainEntity": {
-                  "@id": "https://avifajpg.com#organization"
+                  "@id": `${siteUrl}#organization`
                 },
                 "breadcrumb": {
                   "@type": "BreadcrumbList",
@@ -158,8 +134,8 @@ export default function Contact() {
                   {
                     "@type": "ListItem",
                     "position": 1,
-                    "name": breadcrumbHome,
-                    "item": "https://avifajpg.com"
+                    "name": homeLabel,
+                    "item": homeUrl
                   },
                   {
                     "@type": "ListItem",
@@ -330,7 +306,7 @@ export default function Contact() {
               <section className="contact-section">
                 <h2 className="contact-section-title">{t('contact:faq.title')}</h2>
                 <p className="contact-text">{t('contact:faq.description')}</p>
-                <Link href="/#faq" className="contact-faq-link">
+                <Link href="/#faq" locale={currentLocale} className="contact-faq-link">
                   {t('contact:faq.link')}
                 </Link>
               </section>

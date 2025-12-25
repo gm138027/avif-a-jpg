@@ -5,41 +5,18 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import MainContainerSimple from '@/components/MainContainerSimple';
 import PageTitle from '@/components/PageTitle';
 import SEOContent from '@/components/SEOContent';
+import siteConfig from '@/lib/siteConfig';
 
 // 主入口页面 - 只负责页面级别的事情（SEO、布局）
 export default function Home() {
   const { t } = useTranslation('common');
   const router = useRouter();
+  const { buildLocalePath, getLocaleMeta, siteUrl, defaultLocale } = siteConfig;
 
-  // 获取当前语言和URL
-  const currentLocale = router.locale || 'es';
-
-  // 动态生成多语言URL和语言标识
-  const getLocaleConfig = (locale) => {
-    switch (locale) {
-      case 'en':
-        return {
-          url: 'https://avifajpg.com/en',
-          inLanguage: 'en-US',
-          ogLocale: 'en_US'
-        };
-      case 'fr':
-        return {
-          url: 'https://avifajpg.com/fr',
-          inLanguage: 'fr-FR',
-          ogLocale: 'fr_FR'
-        };
-      default: // 'es'
-        return {
-          url: 'https://avifajpg.com',
-          inLanguage: 'es-ES',
-          ogLocale: 'es_ES'
-        };
-    }
-  };
-
-  const localeConfig = getLocaleConfig(currentLocale);
-  const { url: currentUrl, inLanguage, ogLocale } = localeConfig;
+  const currentLocale = router.locale || defaultLocale;
+  const { inLanguage, ogLocale } = getLocaleMeta(currentLocale);
+  const currentUrl = buildLocalePath(currentLocale, '/');
+  const ogImage = `${siteUrl}/og-image.jpg`;
 
   return (
     <>
@@ -61,7 +38,7 @@ export default function Home() {
         <meta property="og:type" content="website" />
         <meta property="og:url" content={currentUrl} />
         <meta property="og:site_name" content={t('site.name')} />
-        <meta property="og:image" content="https://avifajpg.com/og-image.jpg" />
+        <meta property="og:image" content={ogImage} />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content={t('site.title')} />
@@ -71,7 +48,7 @@ export default function Home() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={t('site.title')} />
         <meta name="twitter:description" content={t('site.description')} />
-        <meta name="twitter:image" content="https://avifajpg.com/og-image.jpg" />
+        <meta name="twitter:image" content={ogImage} />
         <meta name="twitter:image:alt" content={t('site.title')} />
 
         {/* Structured Data */}
@@ -86,10 +63,10 @@ export default function Home() {
                 "name": t('site.title'),
                 "inLanguage": inLanguage,
                 "isPartOf": {
-                  "@id": "https://avifajpg.com#website"
+                  "@id": `${siteUrl}#website`
                 },
                 "publisher": {
-                  "@id": "https://avifajpg.com#organization"
+                  "@id": `${siteUrl}#organization`
                 },
                 "mainEntityOfPage": {
                   "@type": "WebPage",

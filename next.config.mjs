@@ -4,6 +4,7 @@ const nextConfig = {
   i18n: {
     defaultLocale: 'es',
     locales: ['es', 'en', 'fr'], // 现在支持西班牙语、英语和法语
+    localeDetection: false,
     domains: [
       {
         domain: 'avifajpg.com',

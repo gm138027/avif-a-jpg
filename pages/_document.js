@@ -28,19 +28,6 @@ export default function Document({ __NEXT_DATA__ }) {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link rel="preconnect" href="https://www.googletagmanager.com" />
 
-        {/* Google Analytics */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-4GDFBNVZWK"></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-4GDFBNVZWK');
-            `,
-          }}
-        />
-
         {/* 基本SEO优化 */}
         <meta name="generator" content="Next.js" />
         <meta name="format-detection" content="telephone=no" />

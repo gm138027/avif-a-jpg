@@ -3,45 +3,18 @@ import { useTranslation } from 'next-i18next';
 import { useRouter } from 'next/router';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Breadcrumb from '@/components/Breadcrumb';
+import siteConfig from '@/lib/siteConfig';
 
 // 隐私政策页面
 export default function Privacy() {
   const { t } = useTranslation(['privacy', 'common']);
   const router = useRouter();
-  const currentLocale = router.locale || 'es';
-
-  // 动态生成多语言配置
-  const getLocaleConfig = (locale) => {
-    switch (locale) {
-      case 'en':
-        return {
-          url: 'https://avifajpg.com/en/privacy',
-          inLanguage: 'en-US',
-          ogLocale: 'en_US',
-          dateLocale: 'en-US',
-          breadcrumbHome: 'Home'
-        };
-      case 'fr':
-        return {
-          url: 'https://avifajpg.com/fr/privacy',
-          inLanguage: 'fr-FR',
-          ogLocale: 'fr_FR',
-          dateLocale: 'fr-FR',
-          breadcrumbHome: 'Accueil'
-        };
-      default: // 'es'
-        return {
-          url: 'https://avifajpg.com/privacy',
-          inLanguage: 'es-ES',
-          ogLocale: 'es_ES',
-          dateLocale: 'es-ES',
-          breadcrumbHome: 'Inicio'
-        };
-    }
-  };
-
-  const localeConfig = getLocaleConfig(currentLocale);
-  const { url: canonicalUrl, inLanguage, ogLocale, dateLocale, breadcrumbHome } = localeConfig;
+  const { buildLocalePath, getLocaleMeta, siteUrl, defaultLocale } = siteConfig;
+  const currentLocale = router.locale || defaultLocale;
+  const canonicalUrl = buildLocalePath(currentLocale, '/privacy');
+  const homeUrl = buildLocalePath(currentLocale, '/');
+  const { inLanguage, ogLocale, dateLocale, homeLabel } = getLocaleMeta(currentLocale);
+  const ogImage = `${siteUrl}/og-image.jpg`;
 
   // 格式化当前日期
   const currentDate = new Date().toLocaleDateString(dateLocale, {
@@ -65,7 +38,7 @@ export default function Privacy() {
         <meta property="og:type" content="article" />
         <meta property="og:url" content={canonicalUrl} />
         <meta property="og:site_name" content={t('common:site.name')} />
-        <meta property="og:image" content="https://avifajpg.com/og-image.jpg" />
+        <meta property="og:image" content={ogImage} />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content={`${t('privacy:title')} - ${t('common:site.name')}`} />
@@ -75,7 +48,7 @@ export default function Privacy() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={`${t('privacy:title')} | ${t('common:site.name')}`} />
         <meta name="twitter:description" content={t('privacy:introduction.content')} />
-        <meta name="twitter:image" content="https://avifajpg.com/og-image.jpg" />
+        <meta name="twitter:image" content={ogImage} />
         <meta name="twitter:image:alt" content={`${t('privacy:title')} - ${t('common:site.name')}`} />
 
         {/* Structured Data */}
@@ -91,10 +64,10 @@ export default function Privacy() {
                 "url": canonicalUrl,
                 "inLanguage": inLanguage,
                 "isPartOf": {
-                  "@id": "https://avifajpg.com#website"
+                  "@id": `${siteUrl}#website`
                 },
                 "publisher": {
-                  "@id": "https://avifajpg.com#organization"
+                  "@id": `${siteUrl}#organization`
                 },
                 "mainEntityOfPage": {
                   "@type": "WebPage",
@@ -106,8 +79,8 @@ export default function Privacy() {
                   {
                     "@type": "ListItem",
                     "position": 1,
-                    "name": breadcrumbHome,
-                    "item": "https://avifajpg.com"
+                    "name": homeLabel,
+                    "item": homeUrl
                   },
                   {
                     "@type": "ListItem",
