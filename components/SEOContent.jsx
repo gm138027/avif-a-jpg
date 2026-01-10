@@ -129,6 +129,13 @@ export default function SEOContent() {
             </div>
             <p className="advantage-text">{t('seo.advantage_5')}</p>
           </div>
+
+          <div className="advantage-item">
+            <div className="advantage-icon">
+              <img src="/icons/correction.svg" alt="✓" />
+            </div>
+            <p className="advantage-text">{t('seo.advantage_6')}</p>
+          </div>
         </div>
       </section>
 
@@ -159,6 +166,16 @@ export default function SEOContent() {
         <div className="faq-item">
           <h3 className="faq-question">{t('faq.q5')}</h3>
           <p className="faq-answer">{t('faq.a5')}</p>
+        </div>
+
+        <div className="faq-item">
+          <h3 className="faq-question">{t('faq.q6')}</h3>
+          <p className="faq-answer">{t('faq.a6')}</p>
+        </div>
+
+        <div className="faq-item">
+          <h3 className="faq-question">{t('faq.q7')}</h3>
+          <p className="faq-answer">{t('faq.a7')}</p>
         </div>
       </section>
     </div>

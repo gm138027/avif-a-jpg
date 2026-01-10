@@ -112,6 +112,22 @@ export default function Home() {
                         "@type": "Answer",
                         "text": t('faq.a5')
                       }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": t('faq.q6'),
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": t('faq.a6')
+                      }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": t('faq.q7'),
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": t('faq.a7')
+                      }
                     }
                     ]
               })
