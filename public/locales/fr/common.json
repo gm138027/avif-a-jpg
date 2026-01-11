@@ -93,7 +93,8 @@
     "home": "Accueil",
     "privacy": "Politique de confidentialité",
     "terms": "Conditions d'utilisation",
-    "contact": "Contact"
+    "contact": "Contact",
+    "batch_converter": "Convertisseur AVIF par lots"
   },
   "footer": {
     "description": "Convertisseur avif en jpg et png en ligne gratuit en français. Transformez les fichiers avif en formats compatibles de manière sécurisée et privée. Traitement local, aucun téléversement de fichiers vers les serveurs. Convertir avif en jpg gratuit, changer de .avif en jpg sans limites ni inscription. Conversion avif en jpg rapide et fiable.",
@@ -165,5 +166,17 @@
     "cancel": "Annuler",
     "close": "Fermer",
     "try_again": "Réessayer"
+  },
+  "related": {
+    "title": "Ressources associées",
+    "subtitle": "Besoin d’un autre workflow ? Consultez ces ressources.",
+    "items": [
+      {
+        "title": "Convertisseur AVIF par lots avec ZIP",
+        "desc": "Traitez des dizaines d'AVIF en une fois, téléchargez-les dans un ZIP et oubliez les limites ou comptes forcés.",
+        "cta": "Voir le convertisseur par lots",
+        "href": "/convertidor-avif-por-lotes"
+      }
+    ]
   }
 }

@@ -1,0 +1,141 @@
+{
+  "meta": {
+    "title": "Conversor por lotes AVIF → JPG/PNG con descarga ZIP",
+    "description": "Convierte docenas de imágenes AVIF en JPG o PNG en segundos, sin instalar nada y con opción de descargar todo en un ZIP organizado."
+  },
+  "hero": {
+    "title": "Convierte AVIF en JPG/PNG por lotes con un clic",
+    "subtitle": "Carga múltiples imágenes AVIF, elige el formato de salida y descarga todo en un ZIP listo para compartir. Gratis, sin registro y 100 % en tu navegador.",
+    "cta": "Comenzar la conversión por lotes"
+  },
+  "why": {
+    "title": "¿Por qué necesitas un conversor AVIF por lotes?",
+    "items": [
+      {
+        "title": "Compatibilidad real",
+        "desc": "Muchos CMS, navegadores antiguos y apps móviles aún no reconocen AVIF. Convertir en masa a JPG/PNG evita errores de carga."
+      },
+      {
+        "title": "Ahorra tiempo",
+        "desc": "Pasar archivo por archivo es lento y propenso a fallos. Con el modo por lotes conviertes docenas de imágenes en una sola operación."
+      },
+      {
+        "title": "Listo para todos tus canales",
+        "desc": "JPG funciona mejor en redes sociales y blogs; PNG mantiene transparencias para logos, UI o fichas de producto."
+      }
+    ]
+  },
+  "features": {
+    "title": "Funciones clave del conversor por lotes",
+    "upload": {
+      "title": "Carga masiva con miniaturas",
+      "desc": "Arrastra varias imágenes AVIF o selecciónalas desde el explorador. Para mantener la fluidez recomendamos lotes de hasta 50 archivos; siempre puedes dividirlos. Tras subirlos se generan miniaturas para revisar rápidamente.",
+      "imageAlt": "Interfaz mostrando miniaturas tras subir varias imágenes AVIF"
+    },
+    "zip": {
+      "title": "Descarga ZIP automática",
+      "desc": "Al terminar la conversión, pulsa \"Descargar todo (ZIP)\" para obtener un paquete con todos los JPG/PNG. Mantiene los nombres originales y también puedes descargar imágenes individuales si lo prefieres.",
+      "imageAlt": "Botón de descarga ZIP resaltado tras completar la conversión"
+    },
+    "formats": {
+      "title": "Salidas JPG y PNG en el mismo lote",
+      "desc": "Cambia entre JPG (para máxima compatibilidad) y PNG (para logos o fondos transparentes) dentro del mismo lote. No necesitas repetir el proceso para cada formato.",
+      "imageAlt": "Pestañas para elegir avif a jpg o avif a png en la interfaz"
+    },
+    "local": {
+      "title": "Procesamiento local, sin instalaciones",
+      "desc": "Todo ocurre en tu navegador; las imágenes no se suben a servidores externos. Funciona en Chrome, Edge, Firefox o Safari, tanto en escritorio como en móvil."
+    },
+    "unlimited": {
+      "title": "Uso ilimitado y gratuito",
+      "desc": "Sin cuentas, sin suscripciones y sin límites ocultos. Úsalo para proyectos puntuales o flujos de trabajo diarios."
+    }
+  },
+  "steps": {
+    "title": "Cómo funciona el flujo por lotes",
+    "items": [
+      {
+        "title": "1. Subir archivos AVIF",
+        "desc": "Haz clic en \"Seleccionar archivos\" o arrastra tus imágenes. Para cargas grandes, divide el trabajo en grupos de ≤ 50 y elimina o reordena archivos si es necesario."
+      },
+      {
+        "title": "2. Elegir formato de salida",
+        "desc": "Marca JPG para conseguir archivos ligeros y compatibles o PNG si necesitas conservar transparencias y colores planos."
+      },
+      {
+        "title": "3. Convertir y descargar",
+        "desc": "Pulsa \"Convertir\" para procesar el lote. Después descarga cada imagen por separado o usa la opción \"Descargar todo (ZIP)\" para obtener el paquete completo."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Preguntas frecuentes sobre el modo por lotes",
+    "items": [
+      {
+        "question": "¿Cuántas imágenes puedo convertir de una sola vez?",
+        "answer": "No existe un límite rígido, pero dependerá de la memoria y CPU de tu dispositivo. Recomendamos cargar hasta 50 imágenes por lote para asegurar fluidez; si necesitas convertir cientos, hazlo en varias tandas."
+      },
+      {
+        "question": "¿El ZIP cambia los nombres de archivo?",
+        "answer": "No. El archivo ZIP mantiene los nombres originales y el orden del lote para que puedas identificar cada imagen sin esfuerzo."
+      },
+      {
+        "question": "¿Tengo que descargar el ZIP si solo quiero algunas imágenes?",
+        "answer": "No, cada archivo convertido se puede descargar individualmente. El ZIP es una opción extra para cuando necesitas compartir o archivar todo el lote de un solo paso."
+      },
+      {
+        "question": "¿La conversión consume muchos recursos?",
+        "answer": "El proceso usa la potencia del navegador. Cierra pestañas pesadas, trabaja en lotes moderados y, si notas lentitud, refresca la página antes de continuar. Así evitarás bloqueos."
+      },
+      {
+        "question": "¿Necesito comprimir las imágenes antes de convertirlas?",
+        "answer": "Solo si buscas archivos aún más ligeros. El conversor genera JPG optimizados manteniendo la calidad, pero puedes comprimir tus AVIF previamente si lo deseas."
+      }
+    ]
+  },
+  "tips": {
+    "title": "Consejos y mejores prácticas",
+    "items": [
+      "Organiza tus carpetas por proyecto, cliente o fecha para poder empaquetar y enviar más rápido después de convertir.",
+      "Establece una convención de nombres (por ejemplo producto_color.avif) antes de subirlos para que la versión convertida mantenga el mismo orden.",
+      "Limpia la caché del navegador periódicamente si trabajas con lotes grandes; ayuda a liberar memoria y evita cuelgues.",
+      "En iOS o Android, crea un acceso directo a la herramienta para abrirla rápidamente y sube imágenes directamente desde la galería o gestor de archivos.",
+      "Una vez descargado el ZIP, súbelo a tu nube compartida (Drive, Slack, Teams) para que tu equipo reciba todas las imágenes de una vez."
+    ]
+  },
+  "useCases": {
+    "title": "Casos de uso habituales",
+    "items": [
+      {
+        "title": "Estudios de diseño",
+        "desc": "Reciben lotes de AVIF de sus clientes y necesitan convertirlos en JPG/PNG compatibles con herramientas antiguas o para revisión rápida."
+      },
+      {
+        "title": "Comercios electrónicos",
+        "desc": "Transforman catálogos AVIF en PNG con fondo transparente para listados de productos y suben el ZIP directamente a la plataforma."
+      },
+      {
+        "title": "Equipos de redes sociales",
+        "desc": "Producen contenido AVIF de alta calidad y luego lo exportan a JPG ligeros para campañas o publicaciones recurrentes."
+      },
+      {
+        "title": "Freelancers creativos",
+        "desc": "Diseñadores y fotógrafos que trabajan con clientes internacionales empaquetan las entregas en ZIP para enviarlas por correo o nube."
+      },
+      {
+        "title": "Dev/Test y QA",
+        "desc": "Necesitan preparar rápidamente versiones JPG/PNG para probar compatibilidad en navegadores antiguos o dispositivos sin soporte AVIF."
+      }
+    ]
+  },
+  "cta": {
+    "title": "¿Listo para convertir tus AVIF por lotes?",
+    "desc": "Sube tus archivos, elige el formato y descarga todo en ZIP sin límites, sin instalaciones y sin costos ocultos.",
+    "button": "Probar el conversor por lotes"
+  },
+  "images": {
+    "uploadAlt": "Lista de archivos AVIF con miniaturas para conversión masiva",
+    "formatAlt": "Interfaz del conversor mostrando las pestañas avif a jpg y avif a png",
+    "zipAlt": "Pantalla de resultados con el botón Descargar todo (ZIP) destacado"
+  }
+}

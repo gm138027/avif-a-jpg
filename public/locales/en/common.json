@@ -93,7 +93,8 @@
     "home": "Home",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
-    "contact": "Contact"
+    "contact": "Contact",
+    "batch_converter": "Batch AVIF converter"
   },
   "footer": {
     "description": "Free online avif to jpg and png converter in English. Transform avif files to compatible formats securely and privately. Local processing, no file uploads to servers. Convert avif to jpg free, change from .avif to jpg with no limits or registration. Fast and reliable avif to jpg converter.",
@@ -165,5 +166,17 @@
     "cancel": "Cancel",
     "close": "Close",
     "try_again": "Try again"
+  },
+  "related": {
+    "title": "Related resources",
+    "subtitle": "Need a different workflow? Check these resources.",
+    "items": [
+      {
+        "title": "Batch AVIF converter with ZIP download",
+        "desc": "Process dozens of AVIF files at once, download everything in a ZIP, and skip daily limits or accounts.",
+        "cta": "Explore batch converter",
+        "href": "/convertidor-avif-por-lotes"
+      }
+    ]
   }
 }

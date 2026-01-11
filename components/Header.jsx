@@ -9,9 +9,9 @@ const HOME_SECTIONS = ['how-to-use', 'faq'];
 const HEADER_HEIGHT = 80;
 
 export default function Header() {
-  const { t } = useTranslation('common');
+  const { t, i18n } = useTranslation('common');
   const router = useRouter();
-  const currentLocale = router.locale || 'es';
+  const currentLocale = i18n?.language || router.locale || 'es';
 
   const [activeSection, setActiveSection] = useState('');
   const [isLangDropdownOpen, setIsLangDropdownOpen] = useState(false);
@@ -144,7 +144,6 @@ export default function Header() {
           >
             {t('nav.faq')}
           </Link>
-
           <div className="header__lang-switch">
             <button
               className="header__lang-trigger"

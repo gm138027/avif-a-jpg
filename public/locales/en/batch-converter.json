@@ -1,0 +1,142 @@
+{
+  "meta": {
+    "title": "Batch AVIF to JPG/PNG converter with ZIP download",
+    "description": "Convert dozens of AVIF images to JPG or PNG in seconds, with no installs and an optional organized ZIP download."
+  },
+  "hero": {
+    "title": "Batch convert AVIF to JPG/PNG with one click",
+    "subtitle": "Upload multiple AVIF images, choose the output format, and download everything inside a share-ready ZIP. Free, no signup, 100% in your browser.",
+    "cta": "Start batch conversion"
+  },
+  "why": {
+    "title": "Why do you need a batch AVIF converter?",
+    "items": [
+      {
+        "title": "Real-world compatibility",
+        "desc": "Many CMSs, legacy browsers, and mobile apps still can't read AVIF. Mass converting to JPG/PNG prevents broken uploads."
+      },
+      {
+        "title": "Save production time",
+        "desc": "Handling files one by one is slow and error-prone. Batch mode lets you process dozens of images in a single run."
+      },
+      {
+        "title": "Ready for every channel",
+        "desc": "JPG works better on social media and blogs; PNG keeps transparency for logos, UI, or product listings."
+      }
+    ]
+  },
+  "features": {
+    "title": "Core features of the batch converter",
+    "upload": {
+      "title": "Bulk upload with thumbnails",
+      "desc": "Drag several AVIF images or pick them from your file explorer. To keep things smooth we recommend batches of up to 50 files - you can always split them. After uploading, thumbnails let you review every item quickly.",
+      "imageAlt": "Interface showing thumbnails after uploading several AVIF images"
+    },
+    "zip": {
+      "title": "Automatic ZIP download",
+      "desc": "Once conversion finishes, hit \"Download all (ZIP)\" to grab every JPG/PNG in a single package. Filenames stay intact and you can still download individual images if you need.",
+      "imageAlt": "ZIP download button highlighted after completing the conversion"
+    },
+    "formats": {
+      "title": "JPG and PNG outputs in the same batch",
+      "desc": "Switch between JPG (maximum compatibility) and PNG (for transparent backgrounds) within the same session. There's no need to rerun the process for each format.",
+      "imageAlt": "Tabs to choose AVIF to JPG or AVIF to PNG inside the converter"
+    },
+    "local": {
+      "title": "Local processing, no installs",
+      "desc": "Everything runs inside your browser; files never leave your device. Works on Chrome, Edge, Firefox, or Safari, both desktop and mobile."
+    },
+    "unlimited": {
+      "title": "Unlimited and free",
+      "desc": "No accounts, no subscriptions, and no hidden caps. Use it for one-off requests or daily production pipelines."
+    }
+  },
+  "steps": {
+    "title": "How the batch flow works",
+    "items": [
+      {
+        "title": "1. Upload AVIF files",
+        "desc": "Click \"Select files\" or drop your images. For heavier jobs, split them into groups of up to 50 files and remove or reorder items whenever necessary."
+      },
+      {
+        "title": "2. Choose the output format",
+        "desc": "Select JPG for lightweight, broadly compatible files, or PNG when you need to preserve transparency and solid colors."
+      },
+      {
+        "title": "3. Convert and download",
+        "desc": "Press \"Convert\" to process the batch. Then download images individually or use \"Download all (ZIP)\" for the entire package."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Batch mode FAQ",
+    "items": [
+      {
+        "question": "How many images can I convert at once?",
+        "answer": "There's no hard limit; it depends on your device's RAM and CPU. We suggest batches of up to 50 images for smooth performance; if you need hundreds, split them into multiple runs."
+      },
+      {
+        "question": "Does the ZIP change file names?",
+        "answer": "No. The ZIP keeps the original names and the order of the batch so you can identify every file easily."
+      },
+      {
+        "question": "Do I have to download the ZIP if I only need a few files?",
+        "answer": "No, each converted image can be downloaded individually. The ZIP is just a shortcut for sharing or archiving the whole batch."
+      },
+      {
+        "question": "Does conversion use a lot of resources?",
+        "answer": "It uses your browser's resources. Close heavy tabs, work in moderate batches, and refresh the page if you notice slowdowns; that prevents crashes."
+      },
+      {
+        "question": "Should I compress images before converting?",
+        "answer": "Only if you want even smaller outputs. The converter already produces optimized JPGs while keeping quality, but you can pre-compress AVIF files if needed."
+      }
+    ]
+  },
+  "tips": {
+    "title": "Tips and best practices",
+    "items": [
+      "Organize folders by project, client, or date so you can package and send them faster after conversion.",
+      "Set a naming convention (e.g., product_color.avif) before uploading so the converted files keep the same order.",
+      "Clear your browser cache periodically when working with large batches; it frees memory and avoids freezes.",
+      "On iOS or Android, add the tool to your home screen for quick access and import images straight from the gallery or file manager.",
+      "After downloading the ZIP, upload it to your shared cloud (Drive, Slack, Teams) so the entire team gets every image at once."
+    ]
+  },
+  "useCases": {
+    "title": "Typical use cases",
+    "items": [
+      {
+        "title": "Design studios",
+        "desc": "They receive AVIF batches from clients and need JPG/PNG versions for older tools or quick reviews."
+      },
+      {
+        "title": "E-commerce teams",
+        "desc": "They turn supplier AVIF catalogs into PNG with transparent backgrounds for product listings, then upload the ZIP to their platform."
+      },
+      {
+        "title": "Social media teams",
+        "desc": "They shoot high-quality AVIF assets and export lightweight JPGs for campaigns or daily posts."
+      },
+      {
+        "title": "Creative freelancers",
+        "desc": "Designers and photographers working with global clients package deliveries in ZIP files for email or cloud sharing."
+      },
+      {
+        "title": "Dev/Test & QA",
+        "desc": "They quickly prep JPG/PNG versions to verify compatibility in legacy browsers or AVIF-less devices."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Ready to batch-convert your AVIF files?",
+    "desc": "Upload your files, choose the format, and download everything in a ZIP - no limits, no installs, no hidden fees.",
+    "button": "Try the batch converter"
+  },
+  "images": {
+    "uploadAlt": "File list with AVIF thumbnails ready for bulk conversion",
+    "formatAlt": "Converter interface showing the AVIF to JPG and AVIF to PNG tabs",
+    "zipAlt": "Results screen with the Download all (ZIP) button highlighted"
+  }
+}
+

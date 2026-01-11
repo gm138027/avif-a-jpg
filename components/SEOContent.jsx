@@ -1,8 +1,13 @@
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 import { useTranslation } from 'next-i18next';
 
 // SEO内容组件 - 显示优化的SEO文本内容
 export default function SEOContent() {
   const { t } = useTranslation('common');
+  const router = useRouter();
+  const currentLocale = router.locale || 'es';
+  const relatedResources = t('related.items', { returnObjects: true });
 
   return (
     <div className="seo-content">
@@ -176,6 +181,25 @@ export default function SEOContent() {
         <div className="faq-item">
           <h3 className="faq-question">{t('faq.q7')}</h3>
           <p className="faq-answer">{t('faq.a7')}</p>
+        </div>
+      </section>
+
+      <section className="seo-section related-section">
+        <h2 className="seo-h2">{t('related.title')}</h2>
+        <p className="seo-text">{t('related.subtitle')}</p>
+        <div className="related-grid">
+          {relatedResources.map((item, index) => (
+            <Link
+              href={item.href}
+              locale={currentLocale}
+              className="related-card"
+              key={`related-${index}`}
+            >
+              <h3 className="related-card__title">{item.title}</h3>
+              <p className="related-card__desc">{item.desc}</p>
+              <span className="related-card__cta">{item.cta}</span>
+            </Link>
+          ))}
         </div>
       </section>
     </div>
