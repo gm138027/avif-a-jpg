@@ -8,7 +8,7 @@ module.exports = {
   // 翻译文件路径（默认值，明确声明便于维护）
   localePath: './public/locales',
   // 命名空间分离，便于维护大型项目
-  ns: ['common', 'privacy', 'terms', 'contact'],
+  ns: ['common', 'privacy', 'terms', 'contact', 'batch-converter'],
   defaultNS: 'common',
   // 严格模式：翻译键不存在时显示键名而非空字符串
   returnEmptyString: false,
