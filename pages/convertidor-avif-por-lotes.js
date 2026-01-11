@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
@@ -25,9 +26,9 @@ export default function BatchConverterPage() {
         <section className="hero-section">
           <h1>{t('hero.title')}</h1>
           <p>{t('hero.subtitle')}</p>
-          <a href="/" className="cta-btn">
+          <Link href="/" className="cta-btn">
             {t('hero.cta')}
-          </a>
+          </Link>
         </section>
 
         <section className="why-section">
@@ -135,7 +136,13 @@ export default function BatchConverterPage() {
             {tips.map((tip, index) => (
               <div className="advantage-item" key={`tip-${index}`}>
                 <div className="advantage-icon">
-                  <img src="/icons/correction.svg" alt="" aria-hidden="true" />
+                  <Image
+                    src="/icons/correction.svg"
+                    alt=""
+                    aria-hidden="true"
+                    width={18}
+                    height={18}
+                  />
                 </div>
                 <p className="advantage-text">{tip}</p>
               </div>
@@ -158,9 +165,9 @@ export default function BatchConverterPage() {
         <section className="cta-section">
           <h2>{t('cta.title')}</h2>
           <p>{t('cta.desc')}</p>
-          <a href="/" className="cta-btn">
+          <Link href="/" className="cta-btn">
             {t('cta.button')}
-          </a>
+          </Link>
         </section>
       </div>
 
