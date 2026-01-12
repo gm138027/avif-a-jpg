@@ -2,10 +2,10 @@
   "site": {
     "name": "avif to jpg",
     "tagline": "Convert avif to jpg images quickly and securely",
-    "title": "Convert AVIF to JPG online for free — batch converter",
-    "description": "Free online AVIF to JPG/PNG converter. Transform multiple AVIF images in seconds with no signup or installation, no usage limits, and optional ZIP downloads.",
+    "title": "Convert AVIF to JPG online for free — bulk converter",
+    "description": "Free online AVIF to JPG/PNG bulk converter. Transform multiple AVIF images in seconds with no signup or installation, no usage limits, and optional ZIP downloads.",
     "logo_alt": "Free online avif to jpg/png conversion tool",
-    "keywords": "avif to jpg, convert avif to jpg, avif to jpg converter, from avif to jpg, convert from avif to jpg, change avif to jpg"
+    "keywords": "avif to jpg, convert avif to jpg, avif to jpg converter, avif to jpg bulk, from avif to jpg, convert from avif to jpg, change avif to jpg"
   },
   "home": {
     "title": "avif to jpg Converter",
@@ -94,7 +94,8 @@
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
     "contact": "Contact",
-    "batch_converter": "Batch AVIF converter"
+    "batch_converter": "Batch AVIF converter",
+    "secure_converter": "Privacy-first AVIF converter"
   },
   "footer": {
     "description": "Free online avif to jpg and png converter in English. Transform avif files to compatible formats securely and privately. Local processing, no file uploads to servers. Convert avif to jpg free, change from .avif to jpg with no limits or registration. Fast and reliable avif to jpg converter.",
@@ -105,7 +106,7 @@
     "copyright": "© {{year}} {{siteName}}. {{rights}}"
   },
   "seo": {
-    "h1": "Convert AVIF to JPG online for free — batch converter for AVIF images to JPG/PNG with ZIP downloads",
+    "h1": "Convert AVIF to JPG online for free — bulk converter for AVIF images to JPG/PNG with ZIP downloads",
     "h2_convert_jpg": "Convert AVIF to JPG online for free",
     "h2_convert_png": "Convert AVIF to PNG online for free",
     "h2_why_convert": "Why Convert from avif to jpg/png?",
@@ -115,7 +116,7 @@
     "h3_batch_conversion": "Batch Conversion",
     "h3_browser_support": "Browser Compatibility",
     "h3_file_formats": "Supported Formats and Limitations",
-    "jpg_text": "Converting AVIF to JPG online is the fastest way to turn AVIF images into JPG without installing software or hitting limits. Our converter lets you change AVIF files to JPG or PNG in batches while keeping a lightweight size that works on social networks, websites, and even older devices. Convert any AVIF file and stay fully compatible without worrying about restrictions or extra downloads.",
+    "jpg_text": "Converting AVIF to JPG online is the fastest way to turn AVIF images into JPG without installing software or hitting limits. Whether you need an AVIF to JPG bulk task or just a single file, our converter lets you change AVIF files to JPG or PNG in batches while keeping a lightweight size that works on social networks, websites, and even older devices. Convert any AVIF file and stay fully compatible without worrying about restrictions or extra downloads.",
     "png_text": "When you need to convert or change AVIF files to PNG online for free to preserve transparency, logos, or icons, our converter lets you switch from AVIF to PNG with no installs. Just choose PNG before you start and the alpha channel stays intact. It's the easiest way to turn AVIF images into PNG that work in editors, websites, and apps that still don't support AVIF.",
     "why_convert_text": "Although AVIF delivers excellent compression, many websites, social platforms, design tools, and older devices still can't open AVIF files. Converting AVIF to JPG makes your photos compatible with blogs, messaging apps, or online catalogs without format errors. If you need to keep transparency, logos, or icons, converting AVIF to PNG is the best alternative because it preserves the alpha channel and every design detail. Turning your AVIF images into JPG or PNG lets you share, edit, and send them without forcing clients or teammates to install extra software.",
     "how_to_text": "Converting avif to jpg or png is a simple 3-step process:",
@@ -176,6 +177,12 @@
         "desc": "Process dozens of AVIF files at once, download everything in a ZIP, and skip daily limits or accounts.",
         "cta": "Explore batch converter",
         "href": "/convertidor-avif-por-lotes"
+      },
+      {
+        "title": "Private AVIF converter (no uploads)",
+        "desc": "Convert AVIF to JPG/PNG entirely in your browser, free and focused on privacy.",
+        "cta": "View privacy-first converter",
+        "href": "/convertidor-avif-seguro"
       }
     ]
   }

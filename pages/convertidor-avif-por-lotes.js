@@ -3,22 +3,80 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
 import { useTranslation } from 'next-i18next';
+import { useRouter } from 'next/router';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import siteConfig from '@/lib/siteConfig';
 
 export default function BatchConverterPage() {
   const { t } = useTranslation('batch-converter');
+  const router = useRouter();
+  const { buildLocalePath, getLocaleMeta, siteUrl, defaultLocale } = siteConfig;
 
   const whyItems = t('why.items', { returnObjects: true });
   const tips = t('tips.items', { returnObjects: true });
   const faqItems = t('faq.items', { returnObjects: true });
   const useCases = t('useCases.items', { returnObjects: true });
   const steps = t('steps.items', { returnObjects: true });
+  const currentLocale = router.locale || defaultLocale;
+  const { inLanguage, ogLocale } = getLocaleMeta(currentLocale);
+  const canonicalUrl = buildLocalePath(currentLocale, '/convertidor-avif-por-lotes');
+  const ogImage = `${siteUrl}/og-image.jpg`;
+  const faqStructuredData = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    '@id': `${canonicalUrl}#faq`,
+    url: canonicalUrl,
+    name: t('hero.title'),
+    inLanguage,
+    isPartOf: {
+      '@id': `${siteUrl}#website`
+    },
+    publisher: {
+      '@id': `${siteUrl}#organization`
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': `${canonicalUrl}#webpage`
+    },
+    mainEntity: faqItems.map(item => ({
+      '@type': 'Question',
+      name: item.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: item.answer
+      }
+    }))
+  };
 
   return (
     <>
       <Head>
         <title>{t('meta.title')}</title>
         <meta name="description" content={t('meta.description')} />
+        <link
+          rel="canonical"
+          href={buildLocalePath(router.locale || defaultLocale, '/convertidor-avif-por-lotes')}
+        />
+        <meta property="og:title" content={t('meta.title')} />
+        <meta property="og:description" content={t('meta.description')} />
+        <meta property="og:type" content="article" />
+        <meta
+          property="og:url"
+          content={buildLocalePath(router.locale || defaultLocale, '/convertidor-avif-por-lotes')}
+        />
+        <meta property="og:image" content={`${siteUrl}/og-image.jpg`} />
+        <meta property="og:locale" content={ogLocale} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={t('meta.title')} />
+        <meta name="twitter:description" content={t('meta.description')} />
+        <meta name="twitter:image" content={`${siteUrl}/og-image.jpg`} />
+        <meta name="twitter:image:alt" content={t('meta.title')} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(faqStructuredData)
+          }}
+        />
       </Head>
 
       <div className="batch-page">
@@ -160,6 +218,12 @@ export default function BatchConverterPage() {
               </div>
             ))}
           </div>
+          <p className="internal-link">
+            {t('relatedPrivacy.text')}{' '}
+            <Link href="/convertidor-avif-seguro" className="inline-link">
+              {t('relatedPrivacy.cta')}
+            </Link>
+          </p>
         </section>
 
         <section className="cta-section">
@@ -188,7 +252,7 @@ export default function BatchConverterPage() {
         .hero-section p {
           margin-bottom: 1.5rem;
         }
-        .cta-btn {
+        :global(.cta-btn) {
           display: inline-block;
           background: #6c63ff;
           color: #fff;
@@ -268,6 +332,15 @@ export default function BatchConverterPage() {
           padding: 1.25rem;
           border-radius: 12px;
           box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+        }
+        .internal-link {
+          margin-top: 1.25rem;
+          font-size: 1rem;
+          color: #4b5563;
+        }
+        .internal-link :global(.inline-link) {
+          color: #6366f1;
+          font-weight: 600;
         }
         .cta-section {
           text-align: center;

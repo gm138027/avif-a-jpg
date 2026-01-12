@@ -128,6 +128,10 @@
       }
     ]
   },
+  "relatedPrivacy": {
+    "text": "Besoin de confirmer vos exigences de confidentialité avant de lancer un lot AVIF vers JPG/PNG ? Découvrez notre convertisseur sans téléversement.",
+    "cta": "Découvrir le convertisseur privé"
+  },
   "cta": {
     "title": "Prêt à convertir vos AVIF par lots ?",
     "desc": "Importez vos fichiers, choisissez le format et téléchargez tout en ZIP : sans limites, sans installation et sans frais cachés.",

@@ -1,0 +1,152 @@
+{
+  "meta": {
+    "title": "Convertisseur AVIF gratuit en ligne — sans téléverser de fichiers",
+    "description": "Convertissez vos AVIF en JPG/PNG directement dans le navigateur, sans envoi vers un serveur. Un convertisseur AVIF axé sur la confidentialité, idéal pour les flux AVIF vers JPG en lots."
+  },
+  "hero": {
+    "title": "Convertisseur AVIF gratuit en ligne avec traitement local",
+    "subtitle": "Transformez des fichiers AVIF en JPG ou PNG dans votre navigateur. Gratuit, sans inscription, parfait pour les tâches AVIF vers JPG en lots.",
+    "cta": "Utiliser le convertisseur AVIF sans téléversement"
+  },
+  "reasons": {
+    "title": "Pourquoi choisir un convertisseur AVIF qui ne téléverse rien ?",
+    "items": [
+      {
+        "title": "Gardez vos images sous contrôle",
+        "desc": "Les fichiers ne passent jamais par des serveurs tiers, idéal pour des ressources confidentielles ou des photos personnelles."
+      },
+      {
+        "title": "Plus sûr sur les réseaux publics",
+        "desc": "Même sur un Wi-Fi de café ou d'aéroport, tout le traitement reste sur votre appareil."
+      },
+      {
+        "title": "Conforme aux politiques IT strictes",
+        "desc": "De nombreuses équipes n'acceptent que des outils locaux. Notre convertisseur AVIF gratuit et en ligne répond à cette exigence."
+      },
+      {
+        "title": "Flux de travail unifié sur ordinateur et mobile",
+        "desc": "Lancez des conversions AVIF vers JPG en lots depuis un ordinateur ou un téléphone sans installer de logiciel."
+      }
+    ]
+  },
+  "how": {
+    "title": "Comment le convertisseur AVIF en ligne effectue-t-il tout en local ?",
+    "steps": [
+      {
+        "title": "Décodage AVIF via WebAssembly",
+        "desc": "Le navigateur interprète les données AVIF en mémoire et les prépare sous forme de bitmaps."
+      },
+      {
+        "title": "Canvas/Bitmap produit le JPG/PNG",
+        "desc": "Les images se génèrent instantanément, sans rendu dans le cloud."
+      },
+      {
+        "title": "ZIP local pour les traitements en lot",
+        "desc": "Après une session AVIF vers JPG en lot, JavaScript crée le ZIP et déclenche le téléchargement local."
+      },
+      {
+        "title": "Fermer = nettoyer la mémoire",
+        "desc": "Actualiser ou quitter la page libère la mémoire ; rien n'est écrit sur le disque."
+      },
+      {
+        "title": "Continuer même hors connexion",
+        "desc": "Une fois les scripts chargés, vous pouvez poursuivre les conversions et téléchargements même si la connexion chute."
+      }
+    ]
+  },
+  "scenarios": {
+    "title": "Cas d'usage typiques du convertisseur AVIF",
+    "items": [
+      {
+        "title": "Équipes design / marketing",
+        "desc": "Convertissez des campagnes non publiées sans exposer les fichiers."
+      },
+      {
+        "title": "Vendeurs et marketplaces",
+        "desc": "Traitez des catalogues fournisseurs quand le contrat interdit d'envoyer les originaux vers des services externes."
+      },
+      {
+        "title": "Éducation ou santé",
+        "desc": "Manipulez des fichiers contenant des données personnelles uniquement sur des appareils approuvés."
+      },
+      {
+        "title": "Freelances et mobilité",
+        "desc": "Exécutez des conversions AVIF vers JPG en lots sur ordinateur ou mobile sans installer d'application."
+      }
+    ]
+  },
+  "relatedBatch": {
+    "text": "Besoin d'un flux AVIF vers JPG/PNG par lots avec téléchargement ZIP et conseils de production ? Consultez notre convertisseur par lots.",
+    "cta": "Voir le convertisseur par lots"
+  },
+  "tips": {
+    "title": "Comment utiliser le convertisseur AVIF en ligne de façon plus sûre",
+    "items": [
+      "Utilisez la dernière version de Chrome, Edge, Safari ou Firefox pour profiter d'une meilleure sécurité et de meilleures performances.",
+      "Scindez les lots volumineux (≤50 fichiers) afin de garder une bonne vitesse et d'éviter la saturation mémoire.",
+      "Passez en navigation privée : en fermant le navigateur, toutes les traces sont effacées.",
+      "Sur un appareil public ou prêté, téléchargez vos résultats et fermez l'onglet immédiatement.",
+      "Videz régulièrement le cache du navigateur pour éviter les conflits avec d'anciens scripts.",
+      "En entreprise, ajoutez notre domaine à votre liste d'autorisations pour permettre l'accès interne."
+    ]
+  },
+  "safety": {
+    "title": "Nos engagements de sécurité et de transparence",
+    "items": [
+      {
+        "title": "Pas d'inscription, pas d'e-mail",
+        "desc": "Commencez à convertir sans fournir d'informations personnelles."
+      },
+      {
+        "title": "Utilisation gratuite et illimitée",
+        "desc": "Aucun paywall caché ni limite de fichiers."
+      },
+      {
+        "title": "HTTPS de bout en bout",
+        "desc": "Les scripts sont chargés via TLS, empêchant toute altération pendant le transport."
+      },
+      {
+        "title": "Journalisation minimale",
+        "desc": "Nous ne conservons que des métriques de performance anonymes, jamais les noms de fichiers ni leur contenu."
+      },
+      {
+        "title": "GA4 limité aux événements anonymes",
+        "desc": "Nous enregistrons des actions comme « conversion réussie » ou « téléchargement ZIP », sans jamais téléverser d'images. Le mode navigation privée peut encore réduire le suivi."
+      },
+      {
+        "title": "Politique de confidentialité explicite",
+        "desc": "Nous indiquons clairement que tout se déroule en local et qu'aucun fichier n'est sauvegardé."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Questions fréquentes sur le convertisseur AVIF",
+    "items": [
+      {
+        "question": "L'utilisation du convertisseur AVIF en ligne téléverse-t-elle mes images ?",
+        "answer": "Non. Tout le traitement reste dans votre navigateur et nos serveurs ne voient jamais vos fichiers."
+      },
+      {
+        "question": "Faut-il s'inscrire pour utiliser ce convertisseur AVIF gratuit ?",
+        "answer": "Aucune inscription ni e-mail nécessaires, et il n'existe aucune limite d'usage."
+      },
+      {
+        "question": "Puis-je utiliser le convertisseur AVIF hors connexion ?",
+        "answer": "Après le premier chargement, vous pouvez continuer à convertir et télécharger même si la connexion Internet tombe."
+      },
+      {
+        "question": "Est-ce sûr d'utiliser le convertisseur AVIF sur un Wi-Fi public ?",
+        "answer": "Oui, car les fichiers ne quittent pas votre appareil. Nous recommandons néanmoins d'utiliser un matériel de confiance et de fermer l'onglet après usage."
+      },
+      {
+        "question": "GA4 enregistre-t-il le contenu de mes images ?",
+        "answer": "Non. GA4 ne collecte que des événements anonymes (succès/échec, clic sur ZIP, etc.). Vous pouvez utiliser le mode privé pour réduire encore le suivi."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Essayez le convertisseur AVIF sans téléverser de fichiers",
+    "desc": "Protégez vos données, exécutez des conversions AVIF vers JPG en quelques secondes et restez gratuit sur n'importe quel appareil.",
+    "button": "Utiliser le convertisseur AVIF local"
+  }
+}

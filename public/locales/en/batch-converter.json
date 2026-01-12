@@ -1,15 +1,15 @@
 {
   "meta": {
-    "title": "Batch AVIF to JPG/PNG converter with ZIP download",
+    "title": "Bulk AVIF to JPG/PNG converter with ZIP download",
     "description": "Convert dozens of AVIF images to JPG or PNG in seconds, with no installs and an optional organized ZIP download."
   },
   "hero": {
-    "title": "Batch convert AVIF to JPG/PNG with one click",
-    "subtitle": "Upload multiple AVIF images, choose the output format, and download everything inside a share-ready ZIP. Free, no signup, 100% in your browser.",
+    "title": "Bulk convert AVIF to JPG/PNG with one click",
+    "subtitle": "Upload multiple AVIF images, choose the output format, and download everything inside a share-ready ZIP. Perfect for AVIF to JPG bulk jobs—free, no signup, 100% in your browser.",
     "cta": "Start batch conversion"
   },
   "why": {
-    "title": "Why do you need a batch AVIF converter?",
+    "title": "Why do you need a bulk AVIF converter?",
     "items": [
       {
         "title": "Real-world compatibility",
@@ -26,15 +26,15 @@
     ]
   },
   "features": {
-    "title": "Core features of the batch converter",
+      "title": "Core features of the bulk/batch converter",
     "upload": {
       "title": "Bulk upload with thumbnails",
-      "desc": "Drag several AVIF images or pick them from your file explorer. To keep things smooth we recommend batches of up to 50 files - you can always split them. After uploading, thumbnails let you review every item quickly.",
+      "desc": "Drag several AVIF images or pick them from your file explorer. To keep things smooth we recommend batches of up to 50 files - you can always split them. After uploading, thumbnails let you quickly review every item in your AVIF to JPG bulk run.",
       "imageAlt": "Interface showing thumbnails after uploading several AVIF images"
     },
     "zip": {
       "title": "Automatic ZIP download",
-      "desc": "Once conversion finishes, hit \"Download all (ZIP)\" to grab every JPG/PNG in a single package. Filenames stay intact and you can still download individual images if you need.",
+      "desc": "Once conversion finishes, hit \"Download all (ZIP)\" to grab every JPG/PNG in a single package. Filenames stay intact and you can still download individual images if you need, even during a large AVIF to JPG bulk session.",
       "imageAlt": "ZIP download button highlighted after completing the conversion"
     },
     "formats": {
@@ -69,7 +69,7 @@
     ]
   },
   "faq": {
-    "title": "Batch mode FAQ",
+    "title": "Bulk mode FAQ",
     "items": [
       {
         "question": "How many images can I convert at once?",
@@ -128,9 +128,13 @@
       }
     ]
   },
+  "relatedPrivacy": {
+    "text": "Need to double-check privacy before running an AVIF to JPG bulk job? Learn how our no-upload AVIF converter works.",
+    "cta": "See the privacy-first converter"
+  },
   "cta": {
     "title": "Ready to batch-convert your AVIF files?",
-    "desc": "Upload your files, choose the format, and download everything in a ZIP - no limits, no installs, no hidden fees.",
+    "desc": "Upload your files, choose the format, and download everything in a ZIP - no limits, no installs, no hidden fees — ideal for any AVIF to JPG bulk workflow.",
     "button": "Try the batch converter"
   },
   "images": {

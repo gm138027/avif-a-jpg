@@ -2123,8 +2123,8 @@
 }
 
 .related-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  display: flex;
+  flex-direction: column;
   gap: 20px;
   margin-top: 16px;
 }
@@ -2168,7 +2168,7 @@
 
 @media (max-width: 768px) {
   .related-grid {
-    grid-template-columns: 1fr;
+    gap: 16px;
   }
 }
 

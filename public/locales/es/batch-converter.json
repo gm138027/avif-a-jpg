@@ -128,6 +128,10 @@
       }
     ]
   },
+  "relatedPrivacy": {
+    "text": "¿Quieres reforzar la privacidad antes de convertir lotes AVIF a JPG/PNG? Conoce cómo funciona nuestro convertidor sin subir archivos.",
+    "cta": "Ver el convertidor privado"
+  },
   "cta": {
     "title": "¿Listo para convertir tus AVIF por lotes?",
     "desc": "Sube tus archivos, elige el formato y descarga todo en ZIP sin límites, sin instalaciones y sin costos ocultos.",

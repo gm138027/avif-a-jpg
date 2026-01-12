@@ -1,14 +1,16 @@
-const { siteUrl, locales, defaultLocale, buildLocalePath } = require('./lib/siteConfig');
+const { siteUrl, locales, defaultLocale, buildLocalePath, buildLocaleHref } = require('./lib/siteConfig');
 const localePattern = new RegExp(`^/(${locales.join('|')})(/|$)`);
 
 const buildAlternateRefs = (normalizedPath) => ([
   ...locales.map(locale => ({
     href: buildLocalePath(locale, normalizedPath),
-    hreflang: locale
+    hreflang: locale,
+    hrefIsAbsolute: true
   })),
   {
     hreflang: 'x-default',
-    href: buildLocalePath(defaultLocale, normalizedPath)
+    href: buildLocalePath(defaultLocale, normalizedPath),
+    hrefIsAbsolute: true
   }
 ]);
 
@@ -17,10 +19,6 @@ const normalizePath = (path = '/') => {
 
   if (localeMatch) {
     const localeInPath = localeMatch[1];
-    if (localeInPath !== defaultLocale) {
-      return { shouldSkip: true };
-    }
-
     const prefixLength = localeMatch[0].length;
     let remainder = path.slice(prefixLength);
     if (!remainder.startsWith('/')) {
@@ -31,10 +29,10 @@ const normalizePath = (path = '/') => {
       remainder = '/';
     }
 
-    return { normalizedPath: remainder };
+    return { normalizedPath: remainder, locale: localeInPath };
   }
 
-  return { normalizedPath: path || '/' };
+  return { normalizedPath: path || '/', locale: defaultLocale };
 };
 
 /** @type {import('next-sitemap').IConfig} */
@@ -47,16 +45,13 @@ module.exports = {
   sitemapSize: 7000,
   outDir: 'public',
   transform: async (config, path) => {
-    const { shouldSkip, normalizedPath } = normalizePath(path);
-    if (shouldSkip) {
-      return null;
-    }
+    const { normalizedPath, locale } = normalizePath(path);
 
     const changefreq = normalizedPath.includes('/privacy') || normalizedPath.includes('/terms') || normalizedPath.includes('/contact') ? 'monthly' : 'weekly';
     const priority = normalizedPath === '/' ? 1.0 : normalizedPath.includes('/contact') ? 0.5 : normalizedPath.includes('/privacy') || normalizedPath.includes('/terms') ? 0.3 : 0.8;
 
     return {
-      loc: buildLocalePath(defaultLocale, normalizedPath),
+      loc: buildLocalePath(locale, normalizedPath),
       changefreq,
       priority,
       lastmod: config.autoLastmod ? new Date().toISOString() : undefined,

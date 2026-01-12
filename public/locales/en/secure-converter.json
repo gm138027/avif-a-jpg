@@ -1,0 +1,152 @@
+{
+  "meta": {
+    "title": "Free online AVIF converter — no server uploads",
+    "description": "Convert AVIF to JPG/PNG in your browser without uploading files. A privacy-first AVIF converter ideal for AVIF to JPG bulk workflows."
+  },
+  "hero": {
+    "title": "Free online AVIF converter with local processing",
+    "subtitle": "Transform AVIF files to JPG or PNG directly in your browser. Free, no signup, perfect for AVIF to JPG bulk runs.",
+    "cta": "Use the AVIF converter without uploads"
+  },
+  "reasons": {
+    "title": "Why choose an AVIF converter that never uploads files?",
+    "items": [
+      {
+        "title": "Keep every image under your control",
+        "desc": "Files never touch third-party servers, which is ideal for confidential client assets or personal photos."
+      },
+      {
+        "title": "Safer on public networks",
+        "desc": "Even on café or airport Wi-Fi, processing stays on your device and cannot be intercepted."
+      },
+      {
+        "title": "Meets strict IT policies",
+        "desc": "Many teams only approve local-only tools. Our AVIF converter free & online fits those requirements."
+      },
+      {
+        "title": "Unified desktop & mobile workflow",
+        "desc": "Run AVIF to JPG bulk jobs from laptops or phones without installing extra software."
+      }
+    ]
+  },
+  "how": {
+    "title": "How does the online AVIF converter process everything locally?",
+    "steps": [
+      {
+        "title": "WebAssembly decodes AVIF",
+        "desc": "The browser interprets AVIF data in memory and prepares it as bitmaps."
+      },
+      {
+        "title": "Canvas/Bitmap outputs JPG/PNG",
+        "desc": "Images are generated instantly without cloud rendering."
+      },
+      {
+        "title": "Local ZIP for bulk work",
+        "desc": "After an AVIF to JPG bulk run, JavaScript builds the ZIP file and triggers the download on your device."
+      },
+      {
+        "title": "Close the tab, clear the data",
+        "desc": "Refreshing or exiting releases memory; nothing is written to disk."
+      },
+      {
+        "title": "Continue even if offline",
+        "desc": "Once scripts are loaded, you can keep converting and downloading when the network drops."
+      }
+    ]
+  },
+  "scenarios": {
+    "title": "Typical use cases for the AVIF converter",
+    "items": [
+      {
+        "title": "Design / marketing teams",
+        "desc": "Convert unreleased campaigns internally without exposing assets."
+      },
+      {
+        "title": "Sellers & marketplaces",
+        "desc": "Process supplier catalogs when contracts forbid uploading originals to external services."
+      },
+      {
+        "title": "Education or healthcare",
+        "desc": "Handle files containing personal data entirely on approved devices."
+      },
+      {
+        "title": "Freelancers & mobile workflows",
+        "desc": "Execute AVIF to JPG bulk jobs on laptops or phones with zero installs."
+      }
+    ]
+  },
+  "relatedBatch": {
+    "text": "Need structured AVIF to JPG bulk runs with ZIP downloads and workflow tips? Check our dedicated batch converter.",
+    "cta": "Explore the batch converter"
+  },
+  "tips": {
+    "title": "How to use the online AVIF converter more safely",
+    "items": [
+      "Use the latest Chrome, Edge, Safari, or Firefox for stronger sandboxing and performance.",
+      "Split large batches (≤50 files) to maintain speed and prevent high memory usage.",
+      "Switch to private/incognito windows so the browser wipes traces once you close it.",
+      "On public or borrowed devices, download your results and close the tab immediately.",
+      "Clear browser cache periodically to avoid conflicts with outdated scripts.",
+      "In corporate environments, add our domain to your approved allowlist to permit internal access."
+    ]
+  },
+  "safety": {
+    "title": "Security commitments and transparency",
+    "items": [
+      {
+        "title": "No signup or email",
+        "desc": "Start converting without sharing personal information."
+      },
+      {
+        "title": "Unlimited free usage",
+        "desc": "No hidden paywalls or file caps."
+      },
+      {
+        "title": "HTTPS end-to-end",
+        "desc": "Scripts load via TLS, preventing tampering in transit."
+      },
+      {
+        "title": "Minimal logging",
+        "desc": "We only store anonymous performance metrics, never filenames or content."
+      },
+      {
+        "title": "GA4 for anonymous events only",
+        "desc": "We log actions like “conversion success” or “download ZIP” but never upload images. Incognito mode can further limit tracking."
+      },
+      {
+        "title": "Clear privacy policy",
+        "desc": "We explicitly state that everything happens locally and files are never saved."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Common questions about the AVIF converter",
+    "items": [
+      {
+        "question": "Does using the online AVIF converter upload or store my images?",
+        "answer": "No. All processing stays inside your browser and our servers never see your files."
+      },
+      {
+        "question": "Do I need to register to use this free AVIF converter?",
+        "answer": "Not at all. There's no signup, no email requirement, and no usage limits."
+      },
+      {
+        "question": "Can I run the AVIF converter offline?",
+        "answer": "After the initial load, you can keep converting and downloading even if the connection drops."
+      },
+      {
+        "question": "Is it safe to use the AVIF converter on public Wi-Fi?",
+        "answer": "Yes, because files never leave your device. Still, we recommend using trusted hardware and closing the tab when finished."
+      },
+      {
+        "question": "Does GA4 capture my image content?",
+        "answer": "No. GA4 only records anonymous events (e.g., conversion success/failure, download ZIP). Use incognito mode if you want to reduce tracking further."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Try the AVIF converter without server uploads",
+    "desc": "Protect your privacy, run AVIF to JPG bulk tasks in seconds, and stay free of charge on any device.",
+    "button": "Start using the local AVIF converter"
+  }
+}
