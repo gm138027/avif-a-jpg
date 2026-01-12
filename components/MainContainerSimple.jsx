@@ -116,18 +116,18 @@ export default function MainContainerSimple() {
         />
       )}
 
-      {/* 下载页统计信息 - 显示在主舞台上方 */}
-      {currentView === 'download' && stats.total > 0 && (
-        <div className="download-stats">
-          {t('ui.messages.files_completed', { completed: stats.completed, total: stats.total })}
-        </div>
-      )}
-
       {/* 统一卡片容器 - 上传和下载页面都使用统一样式 */}
       <div className="unified-card">
         {/* 顶部清除区域 - 只在有图片时显示 */}
         {images.length > 0 && (
           <div className="clear-list-header">
+            <div className="download-stats">
+              {currentView === 'download' && stats.total > 0 ? (
+                t('ui.messages.files_completed', { completed: stats.completed, total: stats.total })
+              ) : (
+                '\xa0'
+              )}
+            </div>
             <button
               type="button"
               className="clear-list-btn"

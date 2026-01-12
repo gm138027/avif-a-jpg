@@ -838,11 +838,13 @@
 
 /* 下载统计信息 - 显示在主舞台上方 */
 .download-stats {
-  font-size: 14px;
-  color: #6b7280;
-  margin: 0 0 3px 0; /* 距离主舞台上边缘3px */
-  padding: 0 16px; /* 与主舞台左边框对齐 */
-  line-height: 1.4;
+  flex: 1;
+  font-size: 13px;
+  color: #475467;
+  padding: 0 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* 下载操作卡片 */
