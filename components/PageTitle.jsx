@@ -7,6 +7,7 @@ export default function PageTitle() {
   return (
     <div className="page-title-section">
       <h1 className="seo-h1">{t('seo.h1')}</h1>
+      <p className="seo-subtitle">{t('seo.h1_desc')}</p>
     </div>
   );
 }

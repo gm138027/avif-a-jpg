@@ -1,4 +1,4 @@
-const { siteUrl, locales, defaultLocale, buildLocalePath, buildLocaleHref } = require('./lib/siteConfig');
+const { siteUrl, locales, defaultLocale, buildLocalePath } = require('./lib/siteConfig');
 const localePattern = new RegExp(`^/(${locales.join('|')})(/|$)`);
 
 const buildAlternateRefs = (normalizedPath) => ([
@@ -46,6 +46,11 @@ module.exports = {
   outDir: 'public',
   transform: async (config, path) => {
     const { normalizedPath, locale } = normalizePath(path);
+
+    // Exclude error pages from sitemap across all locales.
+    if (normalizedPath === '/404' || normalizedPath === '/500') {
+      return null;
+    }
 
     const changefreq = normalizedPath.includes('/privacy') || normalizedPath.includes('/terms') || normalizedPath.includes('/contact') ? 'monthly' : 'weekly';
     const priority = normalizedPath === '/' ? 1.0 : normalizedPath.includes('/contact') ? 0.5 : normalizedPath.includes('/privacy') || normalizedPath.includes('/terms') ? 0.3 : 0.8;

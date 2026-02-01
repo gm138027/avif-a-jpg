@@ -4,7 +4,7 @@ import siteConfig from '@/lib/siteConfig';
 import { useMemo } from 'react';
 import { parse } from 'url';
 
-const { locales, defaultLocale, buildLocalePath, buildLocaleHref } = siteConfig;
+const { locales, defaultLocale, buildLocalePath } = siteConfig;
 
 export default function MultilingualSEO() {
   const router = useRouter();
@@ -25,7 +25,7 @@ export default function MultilingualSEO() {
   const hreflangUrls = [
     ...locales.map(locale => ({
       hreflang: locale,
-      href: `${siteConfig.siteUrl}${buildLocaleHref(locale, normalizedPath)}`
+      href: buildLocalePath(locale, normalizedPath)
     })),
     {
       hreflang: 'x-default',

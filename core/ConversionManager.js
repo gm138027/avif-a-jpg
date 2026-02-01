@@ -212,9 +212,10 @@ class ConversionManager {
     
     for (const [id, task] of this.tasks) {
       if (task.status === 'completed' || task.status === 'failed') {
-        // 清理Blob URL
-        if (task.result && task.result.blob) {
-          URL.revokeObjectURL(task.result.blob);
+        // Clean up object URLs if present on the result payload.
+        const resultUrl = task.result?.url;
+        if (typeof resultUrl === 'string') {
+          URL.revokeObjectURL(resultUrl);
         }
         
         clearedTasks.push(task);
@@ -233,10 +234,11 @@ class ConversionManager {
   clearAllTasks() {
     const allTasks = Array.from(this.tasks.values());
     
-    // 清理所有Blob URL
-    allTasks.forEach(task => {
-      if (task.result && task.result.blob) {
-        URL.revokeObjectURL(task.result.blob);
+    // Clean up object URLs if present on the result payload.
+    allTasks.forEach((task) => {
+      const resultUrl = task.result?.url;
+      if (typeof resultUrl === 'string') {
+        URL.revokeObjectURL(resultUrl);
       }
     });
 

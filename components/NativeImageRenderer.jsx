@@ -214,7 +214,7 @@ function NativeImageRenderer({
             className="btn btn-primary btn-md"
             onClick={handleFileSelect}
           >
-            <img src="/icons/folder .svg" alt="" className="btn-icon btn-icon--folder" />
+            <img src="/icons/folder.svg" alt="" className="btn-icon btn-icon--folder" />
             {t('ui.buttons.select_file')}
           </button>
           <p>{t('ui.messages.click_to_upload')}</p>

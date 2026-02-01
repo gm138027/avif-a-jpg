@@ -2,7 +2,7 @@
   "site": {
     "name": "avif to jpg",
     "tagline": "Convert avif to jpg images quickly and securely",
-    "title": "Convert AVIF to JPG online for free — bulk converter",
+    "title": "Convert AVIF to JPG online for free",
     "description": "Free online AVIF to JPG/PNG bulk converter. Transform multiple AVIF images in seconds with no signup or installation, no usage limits, and optional ZIP downloads.",
     "logo_alt": "Free online avif to jpg/png conversion tool",
     "keywords": "avif to jpg, convert avif to jpg, avif to jpg converter, avif to jpg bulk, from avif to jpg, convert from avif to jpg, change avif to jpg"
@@ -106,7 +106,8 @@
     "copyright": "© {{year}} {{siteName}}. {{rights}}"
   },
   "seo": {
-    "h1": "Convert AVIF to JPG online for free — bulk converter for AVIF images to JPG/PNG with ZIP downloads",
+    "h1": "Convert AVIF to JPG",
+    "h1_desc": "Convert AVIF to JPG online for free, with no sign-up or installs. Everything is processed locally and downloads are fast.",
     "h2_convert_jpg": "Convert AVIF to JPG online for free",
     "h2_convert_png": "Convert AVIF to PNG online for free",
     "h2_why_convert": "Why Convert from avif to jpg/png?",

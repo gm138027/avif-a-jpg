@@ -60,7 +60,7 @@ export default function SecureConverterPage() {
         />
         <meta property="og:title" content={t('meta.title')} />
         <meta property="og:description" content={t('meta.description')} />
-        <meta property="og:type" content="article" />
+        <meta property="og:type" content="website" />
         <meta
           property="og:url"
           content={buildLocalePath(router.locale || defaultLocale, '/convertidor-avif-seguro')}

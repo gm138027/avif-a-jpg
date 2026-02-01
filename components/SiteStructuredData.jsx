@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 import { useTranslation } from 'next-i18next';
 import siteConfig from '@/lib/siteConfig';
 
-const { siteUrl, buildLocalePath, getLocaleMeta, defaultLocale } = siteConfig;
+const { siteUrl, getLocaleMeta, defaultLocale } = siteConfig;
 const DEFAULT_LOGO = `${siteUrl}/logo/android-chrome-512x512.png`;
 
 export default function SiteStructuredData() {
@@ -15,8 +15,6 @@ export default function SiteStructuredData() {
     const { inLanguage } = getLocaleMeta(locale);
     const siteName = t('site.name');
     const siteDescription = t('site.description');
-    const localeUrl = buildLocalePath(locale, '/');
-
     return {
       '@context': 'https://schema.org',
       '@graph': [
@@ -44,7 +42,7 @@ export default function SiteStructuredData() {
         {
           '@type': 'WebSite',
           '@id': `${siteUrl}#website`,
-          url: localeUrl,
+          url: siteUrl,
           name: siteName,
           description: siteDescription,
           inLanguage,

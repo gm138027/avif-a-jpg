@@ -134,7 +134,7 @@ export default function MainContainerSimple() {
               onClick={handleConvertMore}
               aria-label={t('ui.labels.clear_queue')}
             >
-              <img src="/icons/x-mark .svg" alt="" className="btn-icon" />
+              <img src="/icons/x-mark.svg" alt="" className="btn-icon" />
               {t('ui.buttons.clear_list')}
             </button>
           </div>
