@@ -24,7 +24,6 @@ export default function Home() {
         <title>{t('site.title')}</title>
         <meta name="description" content={t('site.description')} />
         <meta name="keywords" content={t('site.keywords')} />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/logo/favicon.ico" />
         <link rel="canonical" href={currentUrl} />
 

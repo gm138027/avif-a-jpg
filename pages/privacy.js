@@ -35,7 +35,7 @@ export default function Privacy() {
         {/* Open Graph */}
         <meta property="og:title" content={`${t('privacy:title')} | ${t('common:site.name')}`} />
         <meta property="og:description" content={t('privacy:introduction.content')} />
-        <meta property="og:type" content="article" />
+        <meta property="og:type" content="website" />
         <meta property="og:url" content={canonicalUrl} />
         <meta property="og:site_name" content={t('common:site.name')} />
         <meta property="og:image" content={ogImage} />

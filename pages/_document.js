@@ -6,6 +6,7 @@ export default function Document({ __NEXT_DATA__ }) {
   return (
     <Html lang={locale}>
       <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         {/* Favicon 和各种设备图标 */}
         <link rel="icon" href="/logo/favicon.ico" />
         <link rel="icon" type="image/png" sizes="16x16" href="/logo/favicon-16x16.png" />
